@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+a {
+  background-image: none;
+  text-decoration: none
+}
+
+/*developer.mozilla.org/es/docs/Web/CSS/position*/
+
+* {
+  background-image: url("http://files.somepythonthings.tk/banner.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Quicksand', sans-serif;
+  scroll-behavior: smooth;
+}
+
+iframe {
+  background-image: none;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.menuTitle {
+  background-image: none;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  text-decoration: none;
+}
+
+.menu {
+  background-image: none;
+  clear: both;
+  color: black;
+  font-weight: bold;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0.0);
+  padding: 0px;
+}
+
+.menuBar {
+  width: 500px;
+  font-weight: bold
+}
+
+.menuLink {
+  color: black;
+  font-weight: bold;
+  background-image: none;
+  text-decoration: none;
+}
+
+.menuTable {
+  background-image: none;
+  border: hidden rgba(255, 255, 255, 0.0);
+}
+
+.text {
+  font-size: 18px;
+  font-weight: normal;
+  background-image: none;
+  text-decoration: none
+}
+
+.apartat {
+  font-size: 30px;
+  font-weight: normal;
+  background-image: none;
+  text-decoration: none
+}
+
+.background {
+  width: 760px;
+  background-image: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: auto;
+  overflow-y: auto;
+  padding: 20px
+}
+
+.list {
+  background-image: none;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 550;
+  background-image: none;
+  background-color: rgba(255, 255, 255, 0.0);
+  text-decoration: none
+}
+
+.subtitle {
+  font-size: 27px;
+  font-weight: 500;
+  background-image: none;
+  background-color: rgba(255, 255, 255, 0.0);
+}
+
+.headerbackground {
+  position: -webkit-sticky;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: -15px;
+  width: 760px;
+  margin: auto;
+  overflow-y: auto;
+  padding: 5px
+}
+
+.headertop {
+  position: -webkit-sticky;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.headerboth {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+}
+
+.button {
+  background-image: none;
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  font-size: 18px;
+  width: 400px;
+  text-align: left;
+  transition: 0.3s;
+  font-weight: normal
+}
+
+.button:hover {
+  background-image: none;
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-left: 50px;
+  font-size: 18px;
+  width: 100%;
+  text-align: left;
+  font-weight: normal
+}
+
+.menuButton {
+  background-image: none;
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding:5px;
+  font-size: 18px;
+  width: 100%;
+  text-align: left;
+  height: 100%;
+  transition: 0.3s;
+  font-weight: bold
+}
+
+.menuButton:hover {
+  background-image: none;
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-left: 50px;
+  font-size: 18px;
+  width: 100%;
+  text-align: left;
+  height: 100%;
+  transition: 0.3s;
+  font-weight: bold
+}
+
+.form {
+  background-image: none;
+  background-color: rgba(255, 255, 255, 0.0)
+}
+
+.textbox {
+  background-image: none;
+  width: 600px;
+  padding: 5px;
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: black;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.textarea {
+  background-image: none;
+  width: 600px;
+  padding: 5px;
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: black;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.picture {
+  background-image: none;
+  height: 225px;
+  padding: 3px;
+  transition: 0.3s
+}
+
+.picture:hover {
+  background-image: none;
+  height: 225px;
+  padding: 3px;
+}
+
+.pictureGrid {
+  background-image: none;
+  width: 244px;
+  padding: 3px;
+  transition: 0.3s;
+}
+
+.pictureGrid:hover {
+  background-image: none;
+  width: 244px;
+  padding: 3px;
+  opacity: 0.5;
+}
+
+.downloadButton {
+  background-image: none;
+  border: 0px;
+  background-color: rgba(0, 255, 20, 0.5);
+  padding: 5px;
+  font-size: 18px;
+  width: 400px;
+  text-align: left;
+  transition: 0.3s;
+  font-weight: normal
+}
+
+.downloadButton:hover {
+  background-image: none;
+  border: 0px;
+  background-color: rgba(0, 255, 0, 0.5);
+  padding: 5px;
+  padding-left: 50px;
+  font-size: 18px;
+  width: 100%;
+  text-align: left;
+  font-weight: normal
+}
+
+.programEntryBackground {
+  width: 750px;
+  height: auto;
+  background-image: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: auto;
+  overflow-y: auto;
+  padding: 5px;
+  transition: 0.3s
+}
+
+.programEntryBackground:hover {
+  width: 750px;
+  background-image: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: auto;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.menuPicture {
+  position: relative;
+  background-image: none;
+  width: 300;
+  padding: 3px;
+  transition: 0.3s
+}
+
+.menuPicture:hover {
+  opacity: 0.5;
+  background-image: none;
+  width: 300;
+  padding: 3px
+}
+
+
+.nopicture {
+  background-image: none
+}
+
+.upButton {
+  background-image: none;
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  font-size: 18px;
+  width: 80px;
+  text-align: left;
+  transition: 0.3s;
+  font-weight: normal;
+  height: 40px;
+  position: fixed;
+  right: 0px;
+  bottom: 20px
+}
+
+.upButton:hover {
+  background-image: none;
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  font-size: 18px;
+  width: 80px;
+  height: 100%;
+  text-align: left;
+  transition: 0.3s;
+  font-weight: normal;
+  position: fixed;
+  right: 0px;
+  bottom: 20px
+}
+
+.textCheck {
+  background-image: none;
+  width: 150px;
+  padding: 5px;
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0.0);
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.checkbox {
+  background-image:none;
+  width: 15px;
+  -webkit-appearance: auto; /* Navegador */
+  -moz-appearance: auto; /* Firefox */
+  height: 15px;
+  border: 0.1mm solid #FFFFFF88;
+}
+
+::-moz-selection { /* Firefox */
+  background: rgba(255, 255, 255, 0.5);
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0.5);
+}
+/*
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888;
+  transition: 0.3; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+body {
+  overflow: auto;
+}
+*/
+
