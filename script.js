@@ -16,16 +16,6 @@ function checkHTTPS(){
 
 
 
-
-
-
-
-
-
-
-
-
-
 // NOMÉS contactUs.html 
 function sendEmail2(){// NOMÉS contactUs.html 
   if ((checkSubject()==0) && (checkEmail()==0) && (checkBody()==0) && (checkAgree()==0)) {
@@ -100,14 +90,6 @@ function checkAgree(){// NOMÉS contactUs.html
 
 /*6B4F79F73D3D5DB3C78CB87821FD9C852DAF*/ /*Passwd for SPTChannel*/
 /*70d2f234-fa89-4e5a-891a-2051994cb8dd*/ /*Security Token*/
-
-
-
-
-
-
-
-
 
 
 

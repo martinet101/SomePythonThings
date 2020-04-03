@@ -7,7 +7,7 @@ a {
 /*developer.mozilla.org/es/docs/Web/CSS/position*/
 
 * {
-  background-image: url("http://files.somepythonthings.tk/banner.png");
+  background-image: url("files/banner.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
