@@ -374,3 +374,27 @@ body {
 }
 */
 
+.blackButton {
+  color: #FFFFFF;
+  background-image: none;
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  font-size: 18px;
+  width: 400px;
+  text-align: left;
+  transition: 0.3s;
+  font-weight: normal
+}
+
+.blackButton:hover {
+  color: #FFFFFF;
+  background-image: none;
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-left: 50px;
+  font-size: 18px;
+  width: 100%;
+  text-align: left;
+  font-weight: normal
+}
