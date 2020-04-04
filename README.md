@@ -3,7 +3,7 @@ The SomePythonThings Project :D
 
 The SomePythonThings Website Code is here. The programs are going to have an individual git. 
 <ul>  
-<li>SomePythonThings Calc: <a href="https://github.com/martinet101/SomePythonThings-Calc">View here (Actually in creation)</a>
+<li>SomePythonThings Calc: <a href="https://github.com/martinet101/SomePythonThings-Calc">View here</a>
 <li>Other ones: Coming soon!
   </ul>
 
