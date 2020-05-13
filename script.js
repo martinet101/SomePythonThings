@@ -1,3 +1,5 @@
+mode();
+
 function checkHTTPS(){
   var url = window.location.href;
   if (!(url.includes('https'))) {
@@ -6,13 +8,90 @@ function checkHTTPS(){
   }
 }
 
+function readCookies(){     
+  return document.cookie;
+}
 
+function accessData(key){
+  var data = readCookies();
+  data = data.split("; ");
+  for(var i=0;i<data.length;++i){
+    data[i] = data[i];
+  }
+  for(i = 0; i<data.length; ++i){
+    if(data[i].includes(key)){
+      var result = data[i].split("=");
 
+      return result[1].replace('%', '');
+    }
+  }
+  console.log('Key "'+key+'" was not found on cookies database!');
+  return 0;
+}
 
+function pageCounter(){
+  document.write("<p class=text>Total visits: "+accessData('counter')+"</p>");
+}
 
+function setCookies(key, value){
+  document.cookie = key+'='+value+'; path=/';
+  document.cookie = key+'='+value+'; path=/*';
+}
 
+function nextMode(){
+  webmode = accessData('preferredMode')
+  if (webmode == 'dark'){
+    setCookies('preferredMode', 'light');
+    document.getElementById("modeButtonText").innerHTML= "Light";
+  } else if (webmode == 'light'){
+    setCookies('preferredMode', 'auto');
+    document.getElementById("modeButtonText").innerHTML= "Auto";
+  } else if (webmode == 'auto'){
+    setCookies('preferredMode', 'dark');;
+    document.getElementById("modeButtonText").innerHTML= "Dark";
+  }
+  mode();
+}
 
+function returnMode() {
+  webmode = accessData('preferredMode')
+  if(webmode==0){
+    document.cookie = 'preferredMode=auto';
+    mode();
+  } else if(webmode == 'auto'){
+    return 'Auto'
+  } else if (webmode == 'dark'){
+    return 'Dark'
+  } else if (webmode == 'light'){
+    return 'Light'
+  } else {
+    document.cookie = 'preferredMode%=%auto';
+  }
+}
 
+function mode() {
+  webmode = accessData('preferredMode')
+  if(webmode==0){
+    document.cookie = 'preferredMode=auto';
+    mode();
+  } else if(webmode == 'auto'){
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.getElementById('style').href = "/DarkStyle.css";
+    } else {
+      document.getElementById('style').href = "/style.css";
+    }
+  } else if (webmode == 'dark'){
+    document.getElementById('style').href = "/DarkStyle.css";
+  } else if (webmode == 'light'){
+    document.getElementById('style').href = "/style.css";
+  } else {
+    document.cookie = 'preferredMode%=%auto';
+  }
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+    mode();
+})
 
 
 
@@ -53,28 +132,28 @@ function finalSend(){// NOMÉS contactUs.html
 function checkSubject(){// NOMÉS contactUs.html 
   subject = document.getElementById('subject').value
   if (subject.length<5) {
-      document.getElementById('subjectCheck').value = "❌ Too short!"
+      document.getElementById('subjectCheck').value = "❌ Too short!";
   } else {
-    document.getElementById('subjectCheck').value = ""
+    document.getElementById('subjectCheck').value = "";
     return(0)
   }
 }
 function checkEmail(){// NOMÉS contactUs.html 
   email = document.getElementById('email').value
   if (!(email.includes("@")) || !(email.includes('.'))) {
-      document.getElementById('emailCheck').value = "❌ Invalid!"
+      document.getElementById('emailCheck').value = "❌ Invalid!";
   } else {
-    document.getElementById('emailCheck').value = ""
-    return(0)
+    document.getElementById('emailCheck').value = "";
+    return(0);
   }
 }
 function checkBody(){// NOMÉS contactUs.html 
   subject = document.getElementById('body').value
   if (subject.length<25) {
-      document.getElementById('bodyCheck').value = "❌ Too short!"
+      document.getElementById('bodyCheck').value = "❌ Too short!";
+      return(0);
   } else {
-    document.getElementById('bodyCheck').value = ""
-    return(0)
+    document.getElementById('bodyCheck').value = "";
   }
 }
 function checkAgree(){// NOMÉS contactUs.html 

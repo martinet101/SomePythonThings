@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 a {
   background-image: none;
-  text-decoration: none
+  text-decoration: none;
+  color: #EEEEEE;
 }
 
 /*developer.mozilla.org/es/docs/Web/CSS/position*/
 
 * {
   background-image: url("https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/banner.png");
+  color: #EEEEEE;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -18,20 +20,20 @@ a {
 }
 
 td {
- background-color: rgba(255, 255, 255, 0.75);
+ background-color: rgba(51, 51, 51, 0.875);
 }
 
 iframe {
   background-image: none;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(51, 51, 51, 0.6);
 }
 
 .menuTitle {
   background-image: none;
   font-weight: bold;
   font-family: 'Quicksand', sans-serif;
-  color: black;
-  background-color: rgba(255, 255, 255, 0.5);
+  color: #EEEEEE;
+  background-color: rgba(51, 51, 51, 0.6);
   padding: 5px;
   text-decoration: none;
 }
@@ -39,10 +41,10 @@ iframe {
 .menu {
   background-image: none;
   clear: both;
-  color: black;
+  color: #EEEEEE;
   font-weight: bold;
   width: 150px;
-  background-color: rgba(255, 255, 255, 0.0);
+  background-color: rgba(51, 51, 51, 0.0);
   padding: 0px;
 }
 
@@ -60,7 +62,7 @@ iframe {
 
 .menuTable {
   background-image: none;
-  border: hidden rgba(255, 255, 255, 0.0);
+  border: hidden rgba(51, 51, 51, 0.0);
 }
 
 .text {
@@ -80,7 +82,7 @@ iframe {
 .background {
   width: 760px;
   background-image: none;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(51, 51, 51, 0.6);
   margin: auto;
   overflow-y: auto;
   padding: 20px
@@ -94,7 +96,7 @@ iframe {
   font-size: 32px;
   font-weight: 550;
   background-image: none;
-  background-color: rgba(255, 255, 255, 0.0);
+  background-color: rgba(51, 51, 51, 0.0);
   text-decoration: none
 }
 
@@ -102,7 +104,7 @@ iframe {
   font-size: 27px;
   font-weight: 500;
   background-image: none;
-  background-color: rgba(255, 255, 255, 0.0);
+  background-color: rgba(51, 51, 51, 0.0);
 }
 
 .headerbackground {
@@ -118,6 +120,7 @@ iframe {
 }
 
 .headertop {
+  color: #EEEEEE;
   position: -webkit-sticky;
   position: -webkit-sticky;
   position: sticky;
@@ -133,7 +136,7 @@ iframe {
 .button {
   background-image: none;
   border: 0px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(51, 51, 51, 0.6);
   padding: 5px;
   font-size: 18px;
   width: 400px;
@@ -145,7 +148,7 @@ iframe {
 .button:hover {
   background-image: none;
   border: 0px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(51, 51, 51, 0.6);
   padding-left: 50px;
   font-size: 18px;
   width: 100%;
@@ -156,7 +159,7 @@ iframe {
 .menuButton {
   background-image: none;
   border: 0px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(51, 51, 51, 0.6);
   padding:5px;
   font-size: 18px;
   width: 100%;
@@ -169,7 +172,7 @@ iframe {
 .menuButton:hover {
   background-image: none;
   border: 0px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(51, 51, 51, 0.6);
   padding-left: 50px;
   font-size: 18px;
   width: 100%;
@@ -181,7 +184,7 @@ iframe {
 
 .form {
   background-image: none;
-  background-color: rgba(255, 255, 255, 0.0)
+  background-color: rgba(51, 51, 51, 0.0)
 }
 
 .textbox {
@@ -189,7 +192,7 @@ iframe {
   width: 550px;
   padding: 5px;
   border: 0px;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(51, 51, 51, 0.25);
   color: black;
   font-weight: normal;
   font-size: 18px;
@@ -200,7 +203,7 @@ iframe {
   width: 550px;
   padding: 5px;
   border: 0px;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(51, 51, 51, 0.25);
   color: black;
   font-weight: normal;
   font-size: 18px;
@@ -236,7 +239,7 @@ iframe {
 .downloadButton {
   background-image: none;
   border: 0px;
-  background-color: rgba(0, 255, 20, 0.5);
+  background-color: rgba(55, 255, 72, 0.6);
   padding: 5px;
   font-size: 18px;
   width: 400px;
@@ -248,7 +251,7 @@ iframe {
 .downloadButton:hover {
   background-image: none;
   border: 0px;
-  background-color: rgba(0, 255, 0, 0.5);
+  background-color: rgba(0, 255, 0, 0.6);
   padding: 5px;
   padding-left: 50px;
   font-size: 18px;
@@ -261,7 +264,7 @@ iframe {
   width: 750px;
   height: auto;
   background-image: none;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(51, 51, 51, 0.6);
   margin: auto;
   overflow-y: auto;
   padding: 5px;
@@ -271,7 +274,7 @@ iframe {
 .programEntryBackground:hover {
   width: 750px;
   background-image: none;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(51, 51, 51, 0.6);
   margin: auto;
   overflow-y: auto;
   transition: 0.3s;
@@ -300,7 +303,7 @@ iframe {
 .upButton {
   background-image: none;
   border: 0px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(51, 51, 51, 0.6);
   padding: 5px;
   font-size: 18px;
   width: 80px;
@@ -316,7 +319,7 @@ iframe {
 .upButton:hover {
   background-image: none;
   border: 0px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(51, 51, 51, 0.6);
   padding: 5px;
   font-size: 18px;
   width: 80px;
@@ -334,7 +337,7 @@ iframe {
   width: 180px;
   padding: 5px;
   border: 0px;
-  background-color: rgba(255, 255, 255, 0.0);
+  background-color: rgba(51, 51, 51, 0.0);
   color: red;
   font-weight: bold;
   font-size: 18px;
@@ -345,7 +348,7 @@ iframe {
   width: 230px;
   padding: 5px;
   border: 0px;
-  background-color: rgba(255, 255, 255, 0.0);
+  background-color: rgba(51, 51, 51, 0.0);
   color: red;
   font-weight: bold;
   font-size: 18px;
@@ -361,11 +364,11 @@ iframe {
 }
 
 ::-moz-selection { /* Firefox */
-  background: rgba(255, 255, 255, 0.0);
+  background: rgba(51, 51, 51, 0.0);
 }
 
 ::selection {
-  background: rgba(255, 255, 255, 0.0);
+  background: rgba(51, 51, 51, 0.0);
 }
 /*
 ::-webkit-scrollbar {
@@ -394,7 +397,7 @@ body {
   color: #FFFFFF;
   background-image: none;
   border: 0px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 5px;
   font-size: 18px;
   width: 400px;
@@ -407,7 +410,7 @@ body {
   color: #FFFFFF;
   background-image: none;
   border: 0px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   padding-left: 50px;
   font-size: 18px;
   width: 100%;
@@ -419,7 +422,7 @@ body {
   color: #000000;
   background-image: none;
   border: 0px;
-  background-color: rgba(255, 102, 0, 0.5);
+  background-color: rgba(255, 102, 0, 0.6);
   padding: 5px;
   font-size: 18px;
   width: 400px;
@@ -432,7 +435,7 @@ body {
   color: #000000;
   background-image: none;
   border: 0px;
-  background-color: rgba(255, 102, 0, 0.5);
+  background-color: rgba(255, 102, 0, 0.6);
   padding-left: 50px;
   font-size: 18px;
   width: 100%;
@@ -442,10 +445,9 @@ body {
 
 .modeButton {
   background-image: none;
-  border: 1px;
-  color: black;
-  background-color: rgba(255, 255, 255, 0.75);
-  border-color:  rgba(51, 51, 51, 0.75);
+  border: 0px;
+  color: white;
+  background-color: rgba(51, 51, 51, 0.75);
   padding: 5px;
   font-size: 18px;
   text-align: left;
@@ -456,8 +458,8 @@ body {
 .modeButton:hover {
   background-image: none;
   border: 0px;
-  color: white;
-  background-color: rgba(51, 51, 51, 0.85);
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
   padding-left: 5px;
   font-size: 18px;
   text-align: left;
@@ -467,7 +469,7 @@ body {
 .settingsBackground {
   width: 760px;
   background-image: none;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(51, 51, 51, 0.6);
   margin: auto;
   overflow-y: auto;
   padding: 10px;
