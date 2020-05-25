@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <script src="https://smtpjs.com/v3/smtp.js">
+
 </script>
+<script src='https://www.google.com/recaptcha/api.js' async defer></script>
+
 <link rel="icon" type="image/png" href="/files/favicon.png">
+<link rel="stylesheet" type="text/css" href="/DarkStyle.css">
 <link id='style' rel="stylesheet" type="text/css" href="/style.css">
 
 <script src="/script.js">
@@ -13,7 +17,7 @@
 </script>
 <head class=header>
 	<div class=headerbackground>
-		<h1 class=headertop><a class="menuTitle" href=" thenew.html">https://www.somepythonthings.tk&nbsp</a></h1>
+		<h1 class=headertop><a class="menuTitle" href="/">https://www.somepythonthings.tk&nbsp</a></h1>
 		<table border=0 class="menuTable headerboth" width=760>
 			<tr>
 				<td class="menu"><button class=menuButton onclick="window.location.href='/'">Go Home</button></td>
@@ -38,24 +42,28 @@
     <p class=text>The iTunes launcher just runs via shell script the iTunes source code wich contains inside</p>
     <p class=text>All android applications are made with MIT Appinvenor (ai2.appinventor.mit.edu), and some of them have a web-based engine such as SPT Calc.</p><br><br>
     <p class=subtitle>Contact us</p>
-    <input class=textbox type="text" id="subject" size="40" placeholder="Write the subject here..." name="subject" onchange="checkSubject()">&nbsp;
+    <input class=textbox type="text" id="subject" size="40" placeholder="Write the subject here..." name="subject" onkeyup="checkSubject()">&nbsp;
     <input type="text" disabled class="textcheck" id="subjectCheck">
     <br>
     <br>
-    <input class=textbox onclick=checkEmail() type="text" id="email" size="40" placeholder="Write your email here..." name="subject">&nbsp;
+    <input class=textbox onkeyup=checkEmail() type="text" id="email" size="40" placeholder="Write your email here..." name="subject">&nbsp;
     <input type="text" class="textcheck" id="emailCheck" disabled>
     <br>
     <br>
-    <textarea class=textarea name="body" id="body" rows="6" placeholder="Write your message here..." onchange=checkBody()></textarea>&nbsp;
+    <textarea class=textarea name="body" id="body" rows="6" placeholder="Write your message here..." onkeyup=checkBody()></textarea>&nbsp;
     <input type="text" class="textcheck" id="bodyCheck" disabled>
     <br>
     <br>
-    <input class=checkbox type="checkbox" id="agree" onClick="checkAgree()"><a class=text style="font-size:20;">&nbsp;</a>I accept the <a class=text href="/licenseTerms.html#email">conditions and terms</a> of the SPT email service.&nbsp;
+    <input class=checkbox type="checkbox" id="agree" onClick="checkAgree()"><a class=text style="font-size:20;">&nbsp;</a>I accept the <a class=text href="/terms-and-conditions/#email">conditions and terms</a> of the SPT email service.&nbsp;
     <input type="text" class="textcheck_long" id="agreeCheck" style="width:240;height:30;" disabled>
     <br>
     <br>
-    <button onClick="sendEmail2()" value="Submit" class=button>Send!</button>
+    <button id='sendButton' onClick="sendEmail2()" onmouseover='checkAll()' value="Submit" class=button>Send!</button>
     <br>
+    <script>var onloadCallback = function() {
+    robot=false
+  };</script>
+
     <br>
     <p class=text style="font-size:10px;">Email service powered by <a class=text style="font-size:10px;" href="https://www.smtpjs.com/">www.smtpjs.com</a> and by <a href="https://elasticemail.com/">ElasticEmail</a>
     </div>

@@ -8,7 +8,7 @@ a {
 /*developer.mozilla.org/es/docs/Web/CSS/position*/
 
 * {
-  background-image: url("https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/banner.png");
+  background-image: url("https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/fons.jpg");
   color: #EEEEEE;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -17,6 +17,11 @@ a {
   font-family: 'Quicksand', sans-serif;
   scroll-behavior: smooth;
   border-radius:3px;
+  cursor: default;
+}
+
+button {
+  cursor: pointer;
 }
 
 td {
@@ -145,7 +150,7 @@ iframe {
   font-weight: normal
 }
 
-.button:hover {
+.button:hover:enabled {
   background-image: none;
   border: 0px;
   background-color: rgba(51, 51, 51, 0.6);
@@ -187,15 +192,29 @@ iframe {
   background-color: rgba(51, 51, 51, 0.0)
 }
 
+
 .textbox {
   background-image: none;
   width: 550px;
   padding: 5px;
   border: 0px;
   background-color: rgba(51, 51, 51, 0.25);
-  color: black;
+  color: WHITE;
   font-weight: normal;
   font-size: 18px;
+  cursor: text;
+}
+
+.textbox::selection {
+  background-image: none;
+  background: rgba(51, 51, 51, 0.7);
+  color:#EEEEEE;
+}
+
+.textbox::-moz-selection { /*firefox*/
+  background-image: none;
+  background: rgba(51, 51, 51, 0.7);
+  color:#EEEEEE;
 }
 
 .textarea {
@@ -204,9 +223,23 @@ iframe {
   padding: 5px;
   border: 0px;
   background-color: rgba(51, 51, 51, 0.25);
-  color: black;
+  color:white;
   font-weight: normal;
   font-size: 18px;
+  resize:none;
+  cursor: text;
+}
+
+.textarea::selection {
+  background-image: none;
+  background: rgba(51, 51, 51, 0.7);
+  color:#EEEEEE;
+}
+
+.textarea::-moz-selection { /*firefox*/
+  background-image: none;
+  background: rgba(51, 51, 51, 0.7);
+  color:#EEEEEE;
 }
 
 .picture {
@@ -219,6 +252,19 @@ iframe {
 .picture:hover {
   background-image: none;
   height: 225px;
+  padding: 3px;
+}
+
+.smallpicture {
+  background-image: none;
+  height: 64px;
+  padding: 3px;
+  transition: 0.3s
+}
+
+.smallpicture:hover {
+  background-image: none;
+  height: 64px;
   padding: 3px;
 }
 
@@ -313,7 +359,9 @@ iframe {
   height: 40px;
   position: fixed;
   right: 0px;
-  bottom: 20px
+  bottom: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .upButton:hover {
@@ -329,7 +377,9 @@ iframe {
   font-weight: normal;
   position: fixed;
   right: 0px;
-  bottom: 20px
+  bottom: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .textcheck {
@@ -370,28 +420,28 @@ iframe {
 ::selection {
   background: rgba(51, 51, 51, 0.0);
 }
-/*
+
 ::-webkit-scrollbar {
+  background-image: none;
   width: 16px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #22222288; 
 }
  
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #33333388;
   transition: 0.3; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #44444488; 
 }
 
 body {
-  overflow: auto;
+  overflow: overlay;
 }
-*/
 
 .blackButton {
   color: #FFFFFF;
@@ -475,4 +525,12 @@ body {
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+:disabled {
+  cursor: not-allowed;
+}
+
+button[disabled] {
+  pointer-events: all;
 }

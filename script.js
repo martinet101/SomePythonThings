@@ -1,3 +1,5 @@
+var robot=true;
+
 mode();
 
 function checkHTTPS(){
@@ -95,9 +97,9 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
 
 
 
-// NOMÉS contactUs.html 
-function sendEmail2(){// NOMÉS contactUs.html 
-  if ((checkSubject()==0) && (checkEmail()==0) && (checkBody()==0) && (checkAgree()==0)) {
+// NOMÉS /about/ 
+function sendEmail2(){ // NOMÉS /about/ 
+  if ((checkSubject()==0) && (checkEmail()==0) && (checkBody()==0) && (checkAgree()==0) && !(robot)) {
     finalSend();
   } else{
     checkSubject();
@@ -107,7 +109,24 @@ function sendEmail2(){// NOMÉS contactUs.html
     alert("Check the fields and try again.")
   }
 }
-function finalSend(){// NOMÉS contactUs.html 
+
+
+function checkAll(){
+  if ((checkSubject()==0) && (checkEmail()==0) && (checkBody()==0) && (checkAgree()==0)){
+    document.getElementById("sendButton").disabled = false;
+    console.log('btn enabled')
+  } else {
+    checkSubject();
+    checkEmail();
+    checkBody();
+    checkAgree();
+    //document.getElementById("sendButton").disabled = true;
+    console.log('btn disabled')
+
+  }
+}
+
+function finalSend(){// NOMÉS /about/
   if (document.getElementById('agree').checked == true){
     Email.send({
         SecureToken : "70d2f234-fa89-4e5a-891a-2051994cb8dd",
@@ -129,53 +148,50 @@ function finalSend(){// NOMÉS contactUs.html
     );
   } else {alert("You have to accept the conditions and terms");} 
 }
-function checkSubject(){// NOMÉS contactUs.html 
+function checkSubject(){// NOMÉS /about/
   subject = document.getElementById('subject').value
   if (subject.length<5) {
+    document.getElementById('subjectCheck').style = 'color:red;'
       document.getElementById('subjectCheck').value = "❌ Too short!";
   } else {
-    document.getElementById('subjectCheck').value = "";
+    document.getElementById('subjectCheck').style = 'color:rgb(0, 250, 0);'
+    document.getElementById('subjectCheck').value = "✔  OK";
     return(0)
   }
 }
-function checkEmail(){// NOMÉS contactUs.html 
+function checkEmail(){// NOMÉS /about/
   email = document.getElementById('email').value
   if (!(email.includes("@")) || !(email.includes('.'))) {
+    document.getElementById('emailCheck').style = 'color:red;'
       document.getElementById('emailCheck').value = "❌ Invalid!";
   } else {
-    document.getElementById('emailCheck').value = "";
+    document.getElementById('emailCheck').style = 'color:rgb(0, 250, 0);'
+    document.getElementById('emailCheck').value = "✔  OK";
     return(0);
   }
 }
-function checkBody(){// NOMÉS contactUs.html 
+function checkBody(){// NOMÉS /about/
   subject = document.getElementById('body').value
   if (subject.length<25) {
+    document.getElementById('bodyCheck').style = 'color:red;'
       document.getElementById('bodyCheck').value = "❌ Too short!";
-      return(0);
   } else {
-    document.getElementById('bodyCheck').value = "";
+    document.getElementById('bodyCheck').style = 'color:rgb(0, 250, 0);'
+    document.getElementById('bodyCheck').value = "✔  OK";
+    return(0);
   }
 }
-function checkAgree(){// NOMÉS contactUs.html 
+function checkAgree(){// NOMÉS /about/
   checked = document.getElementById('agree').checked
   if (!(checked)) {
+    document.getElementById('agreeCheck').style = 'color:red;'
       document.getElementById('agreeCheck').value = "❌ You have to agree that!"
   } else {
-    document.getElementById('agreeCheck').value = ""
+    document.getElementById('agreeCheck').style = 'color:rgb(0, 250, 0);'
+    document.getElementById('agreeCheck').value = "✔  OK"
     return(0)
   }
 }
 
-
-/*6B4F79F73D3D5DB3C78CB87821FD9C852DAF*/ /*Passwd for SPTChannel*/
-/*70d2f234-fa89-4e5a-891a-2051994cb8dd*/ /*Security Token*/
-
-
-
-
-
-
-
-
-//només licenseTerms.html
+//només /about/
 

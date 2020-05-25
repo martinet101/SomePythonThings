@@ -7,14 +7,20 @@ a {
 /*developer.mozilla.org/es/docs/Web/CSS/position*/
 
 * {
-  background-image: url("https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/banner.png");
+  background-image: url("https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/fons.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   font-family: 'Quicksand', sans-serif;
   scroll-behavior: smooth;
+  color:black;
   border-radius:3px;
+  cursor: default;
+}
+
+button{
+  cursor: pointer;
 }
 
 td {
@@ -142,7 +148,7 @@ iframe {
   font-weight: normal
 }
 
-.button:hover {
+.button:hover:enabled {
   background-image: none;
   border: 0px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -193,6 +199,7 @@ iframe {
   color: black;
   font-weight: normal;
   font-size: 18px;
+  cursor: text;
 }
 
 .textarea {
@@ -204,6 +211,8 @@ iframe {
   color: black;
   font-weight: normal;
   font-size: 18px;
+  resize:none;
+  cursor: text;
 }
 
 .picture {
@@ -310,7 +319,9 @@ iframe {
   height: 40px;
   position: fixed;
   right: 0px;
-  bottom: 20px
+  bottom: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .upButton:hover {
@@ -326,7 +337,9 @@ iframe {
   font-weight: normal;
   position: fixed;
   right: 0px;
-  bottom: 20px
+  bottom: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .textcheck {
@@ -367,28 +380,28 @@ iframe {
 ::selection {
   background: rgba(255, 255, 255, 0.0);
 }
-/*
+
 ::-webkit-scrollbar {
+  background-image: none;
   width: 16px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #FFFFFF88; 
 }
  
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #DDDDDD88;
   transition: 0.3; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #FFFFFF55; 
 }
 
 body {
-  overflow: auto;
+  overflow: overlay;
 }
-*/
 
 .blackButton {
   color: #FFFFFF;
@@ -473,4 +486,30 @@ body {
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
+}
+.textarea::selection {
+  background-image: none;
+  background: rgba(255, 255, 255, 0.5);
+  color:#222222;
+}
+
+.textarea::-moz-selection { /*firefox*/
+  background-image: none;
+  background: rgba(255, 255, 255, 0.5);
+  color:#222222;
+}
+.textbox::selection {
+  background-image: none;
+  background: rgba(255, 255, 255, 0.5);
+  color:#222222;
+}
+
+.textbox::-moz-selection { /*firefox*/
+  background-image: none;
+  background: rgba(255, 255, 255, 0.5);
+  color:#222222;
+}
+
+:disabled {
+  cursor: not-allowed;
 }
