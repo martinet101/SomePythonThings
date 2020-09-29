@@ -32,39 +32,43 @@
   <div class=background float=center>
 		<h2 class=title style="background-color:rgba(1,1,1,0)">How to install an SPT program on a PC</h2>
 ​<br>
-<h2 class=subtitle style="background-color:rgba(1,1,1,0)">System Requirements:</h3>
-<ul class=list>
-<li class=text>50mb disk space (30 for the program and 20 for the installer)
-<li class=text>2GB ram
-<li class=text>1GHz processor on 64bit processors (Windows versions also support 32bit processors)
-<li class=text>It is recommanded to have a network connection
-  </ul>
-  <p class=subtitle>List of compatible operating systems</p>
-  <ul class=list>
-<li class=text>Windows 7*, 8 or 10</li>
-<li class=text>macOS 10.9 or later (Compatible with macOS catalina)</li>
-<li class=text>Linux (All distros, 64bit only)</li>
-<li class=text>Android 2.0 or later</li>
-</ul>
-<p class=text>* Windows 7 requires SP1 to be installed</p>
-​<br>
 <a href="#win10"><button class=button >Install on a windows 8 or 10</button><br><br></a>
 <a href="#win7"><button class=button>Install on a windows 7</button><br><br></a>
 <a href="#macOS"><button class=button>Install on a mac running 10.9 or +</button><br><br></a>
 <a href="#android"><button class=button>Install on an Android device</button><br><br></a>
-<a href="#linux"><button class=button>Install on a PC running Linux</button><br><br></a>
+<a href="#debian"><button class=button>Install on a PC running Debian Linux</button><br><br></a>
+<!--a href="#linux"><button class=button>Install on a PC running Other Linux</button><br><br></a-->
+<h2 class=subtitle style="background-color:rgba(1,1,1,0)">System Requirements:</h3>
+<ul class=list>
+<li class=text>70mb disk space
+<li class=text>2GB ram
+<li class=text>64bit processors (Windows and android versions also support 32bit processors)
+<li class=text>It is recommanded to have a network connection
+  </ul>
+  <p class=subtitle>List of compatible operating systems</p>
+  <ul class=list>
+<li class=text>Windows 7*, 8 or 10 (32bit and 64bit)</li>
+<li class=text>macOS 10.9 or later (64bit)</li>
+<li class=text>Debian Linux (64bit)</li>
+<li class=text>Android 2.0 or later (32bit and 64bit)</li>
+</ul>
+<p class=text>* Windows 7 requires SP1 to be installed</p>
+​<br>
+<!--a download target="_blank" href="/SomePythonThings Manual Offline.mhtml" >
+<div class=downloadButton style='cursor:pointer;'>Download the offline manual version</div></a><br-->
 <br>
-<div id="win10" style="position: absolute;top:870px; left:0px;"></div>
-<div id="win7" style="position: absolute;top:1600px; left:0px;"></div>
-<div id="macOS" style="position: absolute;top:2420px; left:0px;"></div>
-<div id="android" style="position: absolute;top:3220px; left:0px;"></div>
-<div id="linux" style="position: absolute;top:4000px; left:0px;"></div>
+<div id="win10" style="position: absolute;top:890px; left:0px;"></div>
+<div id="win7" style="position: absolute;top:1620px; left:0px;"></div>
+<div id="macOS" style="position: absolute;top:2440px; left:0px;"></div>
+<div id="android" style="position: absolute;top:3240px; left:0px;"></div>
+<div id="debian" style="position: absolute;top:4100px; left:0px;"></div>
+<div id="linux" style="position: absolute;top:5180px; left:0px;"></div>
 <b class=apartat id="win10">1. Install on a PC running Windows 8 or 10 </b>
 <br>
     <ol class=list><b class=text><li class=text>Click on the download link.</li>
     <li class=text>Run the file. </li>
     <li class=text>A SmartScreen pop-up will appear telling you that this is not a trusted developer. Click on "More info..." and then on "Run anyway".</li>
-    <li class=text>Install the program and enjoy :D</li></ol>
+    <li class=text>Follow the on-screen instructions</li></ol>
     <br>
     <br>
     <iframe width="760" height="427.5" src="https://www.youtube.com/embed/4ZAnt9PiYM8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -72,13 +76,12 @@
     <br>
 <p class=apartat>2. Install on a PC running Windows 7</p>
 <br>
-    <ol class=list><!--li class=text>Download and install the package below:</li><br>
-    <button class=downloadButton onclick="window.open('https://sourceforge.net/projects/sptpythonpluginwin764sp1/files/latest/download')">Download SPT Python Plugin for Windows 7</button><br><br-->
+    <ol class=list>
     <li class=text>Click on the download link.</li>
     <li class=text>Your browser may advert you that the file may be dangerous. Just click on"Download anyway".</li>
     <li class=text>Run the file.</li>
     <li class=text>A Windows firewall pop-up will appear telling you that this is not a trusted developer. Just click on "Run ".</li>
-    <li class=text>Install the program and enjoy.</li></ol>
+    <li class=text>Follow the on-screen instructions</li></ol>
 
     <br>
     <br>
@@ -89,7 +92,7 @@
 <br>
     <ol class=list><li class=text>Click on the download link.</li>
     <li class=text>Your browser will advert you that the file may be dangerous. Just click on"Download anyway".</li>
-    <li class=text>Install the package. ALERT!!!: If there are more than one package please install ALL the packages!</li>
+    <li class=text>If you have a package, please install the package. ALERT!!!: If there are more than one package please install ALL the packages!. If you have an application, directly drag the app to the applications folder.</li>
     <li class=text>Run the application. A system preferences pop-up may tell you that this in not a trusted developer. Click "OK".</li>
     <li class=text>Open Applications folder, Control+Click on the app and click on "Open".</li></ol>
  
@@ -106,7 +109,7 @@
     <ol class=list><li class=text>Click on the download link.</li>
     <li class=text>Open the extrackted .apk file</li>
     <li class=text>Enable applications from unknown sources.</li>
-    <li class=text>Google Play Store will advert you that this is not a secure app. Click on Install anyway.</li>
+    <li class=text>Google Play Store may advert you that this is not a secure app. Click on Install anyway.</li>
     <li class=text>Run the application and enjoy!</li>
     </ol>
     <br>
@@ -115,7 +118,24 @@
     <br>
     <br>
     
-    <p class=apartat>5. Install on a device running Linux (All distros)</p>
+    <p class=apartat>5. Install on a device running Debian based Linux</p>
+<br>
+    <p class=text>This is for all the debian-based linux systems, such as Debian, Ubuntu, Ubuntu Mate, Kubuntu, Lubuntu, Rubuntu, Linux Mint, ElementaryOS, Kali linux, etc.
+    <ol class=list><li class=text>Click on the download link.</li>
+    <li class=text>Open the folder where the downloaded file is placed</li>
+    <li class=text>Install the .deb file as you would open a normal file.</li>
+    <li class=text>Follow the on-screen instructions.</li>
+    <br>
+    <p class=text>NOTE: If you don't have any application to open .deb files, follow the steps below: </p>
+    <ol class=list>
+      <li class=text>Open a new terminal and type the following code: <p class=code>sudo apt install gdebi</p> You'll need to write your password.</p>
+      <li class=text>Now you can open the downloaded file as normal. Just open the file and follow the on-screen instructions.</li>
+      </ol>
+    </ol>
+    <br>
+    <iframe width="760" height="427.5" src="https://www.youtube.com/embed/hYkPs1IThTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <br><!--p class=apartat>6. Install on a device running Linux (All distros)</p>
 <br>
     <ol class=list><li class=text>Click on the download link.</li>
     <li class=text>Right-click the appimage downloaded</li>
@@ -126,7 +146,7 @@
     </ol>
     <br>
     <br>
-    <iframe width="760" height="427.5" src="https://www.youtube.com/embed/tY0sdlz3zDY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="760" height="427.5" src="https://www.youtube.com/embed/tY0sdlz3zDY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
     <br>
     <br>
     <p class=text>©️ 2018 - 2020, SomePythonThings 

@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="/DarkStyle.css">
 <link id ='style' rel="stylesheet" type="text/css" href="/style.css">
 <script src="/script.js"></script>
-<title>SomePythonThings - Terms And Conditions</title>
+<title>SomePythonThings - Terms, Cookies and Conditions</title>
 <script>checkHTTPS()</script>
 <head class=header>
 	<div class=headerbackground>
@@ -18,16 +18,16 @@
 		</div>
 </head>
 
-<script>
-//window.onbeforeunload = askagree();
-function askagree(){
+<script type="text/javascript">
+ window.onbeforeunload = function askagree(){
   if (confirm("Do you accept the license terms?")) {
       console.log("user agreed license terms");
   }
   else {
-      window.locarion.replace("");
+      window.location.replace("");
   }
-}</script>
+}
+</script>
 
 <button class=upButton onClick="window.scroll(0, 0)">Go Up!</button>
 <body>
@@ -35,11 +35,11 @@ function askagree(){
     <h1 class=title style="background-color:rgba(1,1,1,0)">License Terms</h1>
     <h2 class=subtitle style="background-color:rgba(1,1,1,0)">General License Terms</h2>
     <ol class=list><li class=text>I'm not responsible if the program is not working,if you loose data, if your computer gets crashed (this shouldn't happen), if your home bows up, if a cat throws you an asteroid, and any other things you can imagine. If you use this, is AT YOUR OWN RISK. (Plz remember the programs are calculators and text editors, nothing destructive)</li><br>
-    <li class=text>Thelicense is CC 4.0: <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Llicència de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"></a></li><br>
+    <li class=text>The license is Apache 2.0: <a class=text style="color:rgb(80, 80, 255);cursor:pointer;" href="https://www.apache.org/licenses/LICENSE-2.0">https://www.apache.org/licenses/LICENSE-2.0</a></li><br>
     <li class=text>The downloadable programs are 100% free and distributable, but only under the name of SomePythonThings. You are not allowed to sell or get any type of economical benefit from this program.</li></ol>
     <h2 id=email class=subtitle style="background-color:rgba(1,1,1,0)">About the cookies 🍪</h2>
     <ol class=list>
-    <li class=text>This page has only 1 cookie to store the value of the Dark/Light/Auto mode that the user prefers.</li></ol>
+    <li class=text>This page has 4 cookies: the first one to store the value of the Dark/Light/Auto mode that the user prefers, the second one to remind you to accept the cookies, and the last ones to store administrator credentials if it does log in. (Take note that a 4th random cookies named "undefined" with value "undefined" may appear)</li></ol>
     <h2 id=email class=subtitle style="background-color:rgba(1,1,1,0)">Email License Terms</h2>
     <ol class=list>
     <li class=text>We are ONLY going to send tou an email if you contact us from the About Us page.</li><br>
@@ -49,3 +49,5 @@ function askagree(){
 <button class=button style="background-color:rgba(255,0,0,0.5)" onclick="alert('You have to agree the license terms to continue.')">Do NOT agree</button>
   </div>
 </body>
+<script type="text/javascript">
+</script>

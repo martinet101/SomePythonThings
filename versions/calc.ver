@@ -1,0 +1,11 @@
+3.4/// - Fixed a bug that changed pi and e values on some windows users.
+ - Now you can add operations on x and y letters.
+ - If you do a syntax error, the program will allow you to "repair" it.
+///
+https://github.com/martinet101/SomePythonThings-Calc/releases/download/3.4/somepythonthings-calc_3.4_amd64.deb
+///
+https://github.com/martinet101/SomePythonThings-Calc/releases/download/3.4/SomePythonThings.Calc.Win32.exe
+///
+https://github.com/martinet101/SomePythonThings-Calc/releases/download/3.4/SomePythonThings.Calc.Win64.exe
+///
+https://github.com/martinet101/SomePythonThings-Calc/releases/download/3.4/SomePythonThings.Calc.macOS.dmg

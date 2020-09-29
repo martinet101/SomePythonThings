@@ -1,0 +1,4 @@
+3.4/// - Solved a bug that may block the calculator after a syntax error.
+ - Added "𝑥", "𝑦", "𝜋" and "𝑒" symbols on the new right side popup.
+ - Improved application icon
+ ///https://www.somepythonthings.tk/files/CalcAndroid.apk

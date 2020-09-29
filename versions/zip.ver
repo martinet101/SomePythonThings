@@ -1,0 +1,12 @@
+2.1/// - UI not hanging
+ - UI rearrangement
+ - Updates are now downloaded and prepared for the installation automatically (You'll see that on the next release)
+ - Added Cancel button
+///
+https://github.com/martinet101/SomePythonThings-Zip-Manager/releases/download/2.1/somepythonthings-zip-manager_2.1_amd64.deb
+///
+https://github.com/martinet101/SomePythonThings-Zip-Manager/releases/download/2.1/SomePythonThings.Zip.Manager.Win32.exe
+///
+https://github.com/martinet101/SomePythonThings-Zip-Manager/releases/download/2.1/SomePythonThings.Zip.Manager.Win64.exe
+///
+https://github.com/martinet101/SomePythonThings-Zip-Manager/releases/download/2.1/SomePythonThings.Zip.Manager.macOS.dmg

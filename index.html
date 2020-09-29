@@ -1,6 +1,3 @@
-<script>
-  
-</script>
 <link rel="icon" type="image/png" href="/files/favicon.png">
 <link rel="stylesheet" type="text/css" href="/DarkStyle.css">
 <link id='style' rel="stylesheet" type="text/css" href="/style.css">
@@ -30,21 +27,164 @@
 <br>
 <div class=background>
 <button class=upButton onClick="window.scroll(0, 0)">Go Up!</button>
-
-<a href="/programs/somepythonthings-calc"><div class=programEntryBackground><table class=nopicture><tr class=nopicture><td class=nopicture rowspan=2 width=95px><img class=menuPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/calc/calc1.jpg"></td><td class=nopicture><p class=apartat>SomePythonThings Calc</p></td></tr><tr class=nopicture><td class=nopicture><p class=text>A great calculator for Windows, Mac and Android!</p></td></tr></table></div></a><br>
-
-<a href="/programs/somepythonthings-zip-manager"><div class=programEntryBackground><table class=nopicture><tr class=nopicture><td class=nopicture rowspan=2 width=95px><img class=menuPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/zip/zip1.png"></td><td class=nopicture><p class=apartat>SomePythonThings Zip Manager</p></td></tr><tr class=nopicture><td class=nopicture><p class=text>It could not be easier to manage ZIPs than now with SomePythonThings Zip Manager!</p></td></tr></table></div></a><br>
-
-<a href="/programs/somepythonthings-text-editor"><div class=programEntryBackground><table class=nopicture><tr class=nopicture><td class=nopicture rowspan=2 width=95px><img class=menuPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/text/text4.png"></td><td class=nopicture><p class=apartat>SomePythonThings Text Editor</p></td></tr><tr class=nopicture><td class=nopicture><p class=text>A easy-to use text and code editor for macOS and Windows.</p></td></tr></table></div></a><br>
-
-<a href="/programs/somepythonthings-itunes-launcher"><div class=programEntryBackground><table class=nopicture><tr class=nopicture><td class=nopicture rowspan=2 width=95px><img class=menuPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/itunes/itunes3.png"></td><td class=nopicture><p class=apartat>SomePythonThings iTunes Laucher for macOS 10.15 and +</p></td></tr><tr class=nopicture><td class=nopicture><p class=text>An app wich allows you to run iTunes on macOS catalina or avobe</p></td></tr></table></div></a><br>
-
-<a href="/programs/somepythonthings-paint"><div class=programEntryBackground><table class=nopicture><tr class=nopicture><td class=nopicture rowspan=2 width=95px><img class=menuPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/paint/paint1.png"></td><td class=nopicture><p class=apartat>SomePythonThings Paint</p></td></tr><tr class=nopicture><td class=nopicture><p class=text>Paint your ideas with SomePythonThings Paint.</p></td></tr></table></div></a><br>
-
-<a href="/programs/somepythonthings-browser"><div class=programEntryBackground><table class=nopicture><tr class=nopicture><td class=nopicture rowspan=2 width=95px><img class=menuPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/browser/browser1.png"></td><td class=nopicture><p class=apartat>SomePythonThings Browser</p></td></tr><tr class=nopicture><td class=nopicture><p class=text>Surf the internet with only a 20mb aplication!</p></td></tr></table></div></a>
-
-
-<script>//pageCounter();</script>
-
-
+<div id='popup_background'></div>
+<div id = 'popup'>
+  <p class="title intoPopup">This website uses cookies!</p>
+  <p class="text intoPopup">This website uses only the necessary cookies to grant the best user experience. for more information, click on "About the cookies..."</p>
+  <p class="text intoPopup">Clicking on accept or skipping the banner in another way means that you ACCEPT the conditions written on <a href="/terms-and-conditions"style="color:blue">www.somepythonthings.tk/terms-and-conditions/</a><br>2018-2020, The SomePythonThings Project</p>
+  <button onClick="acceptAndCloseBanner();" class=menuButton id="popupButton1" style="width:31%; height: 100px;margin:1%;">I Agree</button><button onClick="alert('You have to accept the terms and conditions to continue!')" class=menuButton id = "popupButton2" style="width:31%; height: 100px;margin:1%">Do not agree</button><button class=menuButton onclick="window.location.href='/terms-and-conditions';" id="popupButton3" style="width:31%; height: 100px;margin:1%;">About the cookies...</button>
 </div>
+
+<script>checkLicense();</script>
+<a href="/programs/somepythonthings-calc"><div class=programEntryBackground><table class=nopictureandpointer><tr class=nopictureandpointer><td class=nopictureandpointer rowspan=2 width=95px><img class=menuPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/calc/calc_9.png"></td><td class=nopictureandpointer><p class="apartat pointer">SomePythonThings Calc</p></td></tr><tr class=nopictureandpointer><td class=nopictureandpointer><p class="text pointer">A great calculator for Windows, Mac and Android!</p></td></tr></table></div></a><br>
+
+<a href="/programs/somepythonthings-zip-manager"><div class=programEntryBackground><table class=nopictureandpointer><tr class=nopictureandpointer><td class=nopictureandpointer rowspan=2 width=95px><img class=menuPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/zip/zip_9.png"></td><td class=nopictureandpointer><p class="apartat pointer">SomePythonThings Zip Manager</p></td></tr><tr class=nopictureandpointer><td class=nopictureandpointer><p class="text pointer">It could not be easier to manage ZIPs than now with SomePythonThings Zip Manager!</p></td></tr></table></div></a><br>
+
+<a href="/programs/somepythonthings-browser"><div class=programEntryBackground><table class=nopictureandpointer><tr class=nopictureandpointer><td class=nopictureandpointer rowspan=2 width=95px><img class=menuPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/browser/browser_1.png"></td><td class=nopictureandpointer><p class="apartat pointer">SomePythonThings Browser</p></td></tr><tr class=nopictureandpointer><td class=nopictureandpointer><p class="text pointer">Surf the internet with only a 10.16mb aplication!</p></td></tr></table></div></a><br>
+
+<a href="/programs/somepythonthings-text-editor"><div class=programEntryBackground><table class=nopictureandpointer><tr class=nopictureandpointer><td class=nopictureandpointer rowspan=2 width=95px><img class=menuPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/text/text_4.png"></td><td class=nopictureandpointer><p class="apartat pointer">SomePythonThings Text Editor</p></td></tr><tr class=nopictureandpointer><td class=nopictureandpointer><p class="text pointer">A easy-to use text and code editor for macOS and Windows.</p></td></tr></table></div></a><br>
+
+<a href="/programs/somepythonthings-itunes-launcher"><div class=programEntryBackground><table class=nopictureandpointer><tr class=nopictureandpointer><td class=nopictureandpointer rowspan=2 width=95px><img class=menuPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/itunes/itunes_3.png"></td><td class=nopictureandpointer><p class="apartat pointer">SomePythonThings iTunes Laucher for macOS 10.15 and +</p></td></tr><tr class=nopictureandpointer><td class=nopictureandpointer><p class="text pointer">An app wich allows you to run iTunes on macOS catalina or avobe</p></td></tr></table></div></a><br>
+
+<a href="/programs/somepythonthings-paint"><div class=programEntryBackground><table class=nopictureandpointer><tr class=nopictureandpointer><td class=nopictureandpointer rowspan=2 width=95px><img class=menuPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/paint/paint_1.png"></td><td class=nopictureandpointer><p class="apartat pointer">SomePythonThings Paint</p></td></tr><tr class=nopictureandpointer><td class=nopictureandpointer><p class="text pointer">Paint your ideas with SomePythonThings Paint.</p></td></tr></table></div></a>
+<!--
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+
+hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+  -->
+</div>
+<br id='news'><br><br><br><br><br>
+<div class=background>
+  <p class=title>Website News</p>
+  <div class=programNewsBackground>
+    <table class=nopicture><tr class=nopicture><td class=nopicture>
+  <img class=newsPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/calc/calc_9.png"></td><td class=nopicture><p class=text>27/9/2020: SomePythonThings Calc version 3.4 for desktop arrived: Solved a bug that may have caused windows users wrong pi and e values. Added the ability to write operations on the x and the y letters. Other little improvements</p></td></tr></table>
+  </div>
+  <br>
+  <div class=programNewsBackground>
+    <table class=nopicture><tr class=nopicture><td class=nopicture>
+  <img class=newsPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/SPT_Banner.jpg"></td><td class=nopicture><p class=text>26/9/2020: An semi-automatic update system is being introduced. On debian, the install will be automatic, and on windows and macOS, the installer/dmg file is going to be downloaded and opened without user interaction. </p></td></tr></table>
+  </div>
+  <br>
+  <div class=programNewsBackground>
+    <table class=nopicture><tr class=nopicture><td class=nopicture>
+  <img class=newsPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/zip/zip_9.png"></td><td class=nopicture><p class=text>26/9/2020: SomePythonThings Zip Manager version 2.1 has arrived! Application not hanging, Buttons rearrangement, new auto-update system (you'll be able to see that on the nex update) and Cancel buttons added.</p></td></tr></table>
+  </div>
+  <br>
+  <div class=programNewsBackground>
+    <table class=nopicture><tr class=nopicture><td class=nopicture>
+  <img class=newsPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/SPT_Banner.jpg"></td><td class=nopicture><p class=text>13/9/2020: Finally, I've managed to create debian files. For the moment, they are available for the Zip Manager and on the Calculator, and they will arrive on new releases of the other programs!</p></td></tr></table>
+  </div>
+  <br>
+  <div class=programNewsBackground>
+    <table class=nopicture><tr class=nopicture><td class=nopicture>
+  <img class=newsPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/SPT_Banner.jpg"></td><td class=nopicture><p class=text>12/9/2020: Changed license from Creative Commons 4.0 to Apache 2.0</p></td></tr></table>
+  </div>
+  <br>
+  <div class=programNewsBackground>
+    <table class=nopicture><tr class=nopicture><td class=nopicture>
+  <img class=newsPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/calc/calc_9.png"></td><td class=nopicture><p class=text>12/9/2020: SomePythonThings Calc version 3.3 for desktop arrived: Added x, y, pi and e symbols on macOS and Linux, where users may have seen squares instead. Lots of bug fixes (Because I've managed to debug Python with VS Code) and little improvements.</p></td></tr></table>
+  </div>
+  <br>
+  <div class=programNewsBackground>
+    <table class=nopicture><tr class=nopicture><td class=nopicture>
+  <img class=newsPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/zip/zip_9.png"></td><td class=nopicture><p class=text>10/9/2020: With a 100% new UI, SomePythonThings Zip Manager version 2.0 has arrived! Fixed macOS unstability, now chrome and python are not required, and many more features! </p></td></tr></table>
+  </div>
+  <br>
+  <div class=programNewsBackground>
+    <table class=nopicture><tr class=nopicture><td class=nopicture>
+  <img class=newsPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/zip/zipv1.png"></td><td class=nopicture><p class=text>6/9/2020: SomePythonThings Zip Manager version 1.3 arrived: Now you can see the actual extracting progress on the progress bar and  the file being extracted. Bug fixes </p></td></tr></table>
+  </div>
+  <br>
+  <div class=programNewsBackground>
+    <table class=nopicture><tr class=nopicture><td class=nopicture>
+  <img class=newsPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/calc/calc_9.png"></td><td class=nopicture><p class=text>5/9/2020: SomePythonThings Calc version 3.2 for desktop and 3.3 for android arrived: Added x, y, pi and e numbers.</p></td></tr></table>
+  </div>
+  <br>
+  
+  <div class=programNewsBackground>
+    <table class=nopicture><tr class=nopicture><td class=nopicture>
+  <img class=newsPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/calc/calc_9.png"></td><td class=nopicture><p class=text>10/8/2020: SomePythonThings Calc version 3.2 for android arrived: Bug fixes, little UI improvements and added number formatting system</p></td></tr></table>
+  </div>
+  <br>
+
+  <div class=programNewsBackground>
+    <table class=nopicture><tr class=nopicture><td class=nopicture>
+  <img class=newsPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/browser/browser_1.png"></td><td class=nopicture><p class=text>19/7/2020: SomePythonThings Browser for android version 1.3 arrives with lots of GUI improvements, history now works, and you can delete cookies and all the data of the browser. </p></td></tr></table>
+  </div>
+  <br>
+    <div class=programNewsBackground>
+    <table class=nopicture><tr class=nopicture><td class=nopicture>
+  <img class=newsPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/calc/calc_9.png"></td><td class=nopicture><p class=text>19/7/2020: SomePythonThings Calc version 3.1 arrived (for android also :D): Now, instead of using 300mb of disk space, the porgram only takes between 30 and 80mb. We improved also update system. The program is faster now.</p></td></tr></table>
+  </div>
+  <br>
+  <div class=programNewsBackground>
+    <table class=nopicture><tr class=nopicture><td class=nopicture>
+  <img class=newsPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/calc/calc_9.png"></td><td class=nopicture><p class=text>11/7/2020: SomePythonThings Calc version 3.0 arrived: Lots of bugs fixes, UI egnine switched to PyQt5 System</p></td></tr></table>
+  </div>
+  <br>
+  <div class=programNewsBackground>
+    <table class=nopicture><tr class=nopicture><td class=nopicture>
+  <img class=newsPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/SPT_Banner.jpg"></td><td class=nopicture><p class=text>10/7/2020: A system to easily install programs on linux is coming on next releases!</p></td></tr></table>
+  </div>
+  <br>
+  <div class=programNewsBackground>
+    <table class=nopicture><tr class=nopicture><td class=nopicture>
+  <img class=newsPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/text/text_4.png"></td><td class=nopicture><p class=text>15/6/2020: SomePythonThings Text Editor version 2.3 arrived: Improvements on saving and opening system and other minor bug fixes </p></td></tr></table>
+  </div>
+  <br>
+  <div class=programNewsBackground>
+    <table class=nopicture><tr class=nopicture><td class=nopicture>
+  <img class=newsPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/zip/zipv1.png"></td><td class=nopicture><p class=text>15/6/2020: SomePythonThings Zip Manager version 1.2 arrived: Solved a bug that prevented ZIPs from being created randomly, UI improvements and minor bug fixes. </p></td></tr></table>
+  </div>
+  <br>
+  <div class=programNewsBackground>
+    <table class=nopicture><tr class=nopicture><td class=nopicture>
+  <img class=newsPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/calc/calc_9.png"></td><td class=nopicture><p class=text>15/6/2020: SomePythonThings Calc version 2.4 arrived: Solved calculation error bug, UI improvements and some other bug fixes.</p></td></tr></table>
+  </div>
+  <br>
+  <!--div class=programNewsBackground>
+    <table class=nopicture><tr class=nopicture><td class=nopicture>
+  <img class=newsPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/browser/browser1.png"></td><td class=nopicture><p class=text>In a Future: SomePythonThings Browser for PC is coming...</p></td></tr></table>
+  </div>
+  <br-->
+  <div class=programNewsBackground>
+    <table class=nopicture><tr class=nopicture><td class=nopicture>
+  <img class=newsPicture src="https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/zip/zipv1.png"></td><td class=nopicture><p class=text>8/6/2020: SomePythonThings Zip Manager 1.1 arrived: Solved a bug that prevented files for not being compressed, added progressbar, add folder button, clear files button and UI improvements! </p></td></tr></table>
+  </div>
+  <br>
+  </div><br><br><br><br>
+  <div class=background>
+  <script src="/files/sha256.js"></script>
+  <p class=apartat id='loginincorrect'>SomePythonThings Administrator Login</p><br id='login'>
+  <button class=button onClick="newpage('https://www.somepythonthings.tk/admin')">Go to administration area</button><br><br>
+  <script>
+  if ((window.location.href).includes('incorrect')) {
+    document.write("<div style='background-image:none;background-color:rgba(255, 200, 200, 1); border: 2px solid; border-color: red; color:red;padding: 2px; padding-left:20px'><p style='background-image:none; color:red;font-weight:bold;'>Invalid credentials!</p></div>");
+  }</script>
+  <div  id='logout'></div>
+  <script>
+  if ((window.location.href).includes('logout')) {
+    document.write("<div style='background-image:none;background-color:rgba(200, 200, 255, 1); border: 2px solid; border-color: blue; color:blue;padding: 2px; padding-left:20px'><p style='background-image:none; color:blue;font-weight:bold;'>Logged out successfully</p></div>");
+  }</script>
+  <div id='logging' style='visibility:hidden; height:0px;background-image:none;background-color:rgba(200, 255, 200, 1); border: 2px solid; border-color: green; color:green;padding: 2px; padding-left:20px'><p style='background-image:none; color:green;font-weight:bold;'>Logging in...</p></div><div id='br1' style='visibility:hidden;background-image:none;'><br><br id = 'br2' style='visibility:hidden;'></div>
+  <input class=textbox id=loginusername type=text placeholder="Username"><br><br>
+  <input class=textbox id=loginpassword type=password placeholder="Password"><br><br>
+  <button class=button onClick="login()">Administrator Login</button>
+  </div>
+
+<script>
+if(window.location.href.includes('licensePOPUP') ){
+  wait(1000);
+  checkLicense();
+}</script>

@@ -1,12 +1,58 @@
-var robot=true;
-
 mode();
+function wait(timeout) {
+    return new Promise(resolve => {
+        setTimeout(resolve, timeout);
+    });
+}
+
+function acceptAndCloseBanner(){
+  document.getElementById('popup').style.visibility = "hidden";
+  document.getElementById('popup_background').style.visibility = "hidden";
+  d = new Date;
+  setCookies('license', "accepted; expires=Thu, 31 Dec " + (d.getFullYear() + 1) + " 12:00:00 UTC")
+}
+
+function newpage(s){
+  open(s);
+}
+
+function logout(){
+  setCookies('username', '');
+  setCookies('password', '');
+  window.location.href='/#logout'
+}
+
+function checkLicense(){
+  if(accessData('license') != 'accepted'){
+    document.getElementById('popup').style.visibility = "visible";
+    document.getElementById('popup_background').style.visibility = "visible";
+    }
+  }
+
+
+
+function login(){
+  if ((window.location.href).includes('https')){
+    document.getElementById('logging').style.visibility='visible';
+    document.getElementById('logging').style.height='auto';
+    document.getElementById('br1').style.visibility='visible';
+    document.getElementById('br2').style.visibility='visible';
+    username = document.getElementById('loginusername').value;
+    password = sha256(document.getElementById('loginpassword').value);
+    setCookies('username', username)
+    setCookies('password', password)
+    window.location.replace("/admin/");
+  } else {
+    alert('You need to establish a secure (https) connection to be able to login')
+  }
+}
 
 function checkHTTPS(){
   var url = window.location.href;
   if (!(url.includes('https'))) {
+    if(!(url.includes("NOHTTPS"))){
     window.location.replace(url.replace("http://", "https://"));
-    
+    }
   }
 }
 
@@ -27,7 +73,7 @@ function accessData(key){
       return result[1].replace('%', '');
     }
   }
-  console.log('Key "'+key+'" was not found on cookies database!');
+  console.warn('Key "'+key+'" was not found on cookies database!');
   return 0;
 }
 
@@ -99,7 +145,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
 
 // NOMÉS /about/ 
 function sendEmail2(){ // NOMÉS /about/ 
-  if ((checkSubject()==0) && (checkEmail()==0) && (checkBody()==0) && (checkAgree()==0) && !(robot)) {
+  if ((checkSubject()==0) && (checkEmail()==0) && (checkBody()==0) && (checkAgree()==0)) {
     finalSend();
   } else{
     checkSubject();
@@ -194,4 +240,3 @@ function checkAgree(){// NOMÉS /about/
 }
 
 //només /about/
-

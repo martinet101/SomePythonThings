@@ -2,12 +2,14 @@
 a {
   background-image: none;
   text-decoration: none;
-  color: #EEEEEE;
+  color:rgb(80, 80, 255);
+  cursor:pointer;
 }
 
 /*developer.mozilla.org/es/docs/Web/CSS/position*/
 
 * {
+  outline:none;
   background-image: url("https://raw.githubusercontent.com/martinet101/SomePythonThings-Media/master/fons.jpg");
   color: #EEEEEE;
   background-repeat: no-repeat;
@@ -25,7 +27,7 @@ button {
 }
 
 td {
- background-color: rgba(51, 51, 51, 0.875);
+ background-color: rgba(51, 51, 51, 0.84);
 }
 
 iframe {
@@ -34,6 +36,7 @@ iframe {
 }
 
 .menuTitle {
+  border: solid black 1px;
   background-image: none;
   font-weight: bold;
   font-family: 'Quicksand', sans-serif;
@@ -85,6 +88,7 @@ iframe {
 }
 
 .background {
+  border: solid black 1px;
   width: 760px;
   background-image: none;
   background-color: rgba(51, 51, 51, 0.6);
@@ -114,8 +118,8 @@ iframe {
 
 .headerbackground {
   position: -webkit-sticky;
-  position: -webkit-sticky;
   position: sticky;
+  /*border: solid black 1px;*/
   z-index: 1;
   top: -15px;
   width: 760px;
@@ -123,6 +127,7 @@ iframe {
   overflow-y: auto;
   padding: 5px
 }
+.headerbackground:stick
 
 .headertop {
   color: #EEEEEE;
@@ -139,8 +144,8 @@ iframe {
 }
 
 .button {
+  border: solid black 1px;
   background-image: none;
-  border: 0px;
   background-color: rgba(51, 51, 51, 0.6);
   padding: 5px;
   font-size: 18px;
@@ -151,8 +156,8 @@ iframe {
 }
 
 .button:hover:enabled {
+  border: solid black 1px;
   background-image: none;
-  border: 0px;
   background-color: rgba(51, 51, 51, 0.6);
   padding-left: 50px;
   font-size: 18px;
@@ -163,7 +168,7 @@ iframe {
 
 .menuButton {
   background-image: none;
-  border: 0px;
+  border: solid black 1px;
   background-color: rgba(51, 51, 51, 0.6);
   padding:5px;
   font-size: 18px;
@@ -194,10 +199,10 @@ iframe {
 
 
 .textbox {
+  border: solid black 1px;
   background-image: none;
   width: 550px;
   padding: 5px;
-  border: 0px;
   background-color: rgba(51, 51, 51, 0.25);
   color: WHITE;
   font-weight: normal;
@@ -221,7 +226,7 @@ iframe {
   background-image: none;
   width: 550px;
   padding: 5px;
-  border: 0px;
+  border: solid black 1px;
   background-color: rgba(51, 51, 51, 0.25);
   color:white;
   font-weight: normal;
@@ -245,47 +250,47 @@ iframe {
 .picture {
   background-image: none;
   height: 225px;
-  padding: 3px;
+  border: 1px solid black;
   transition: 0.3s
 }
 
 .picture:hover {
   background-image: none;
+  border: 1px solid black;
   height: 225px;
-  padding: 3px;
 }
 
 .smallpicture {
   background-image: none;
+  border: 1px solid black;
   height: 64px;
-  padding: 3px;
   transition: 0.3s
 }
 
 .smallpicture:hover {
+  border: 1px solid black;
   background-image: none;
   height: 64px;
-  padding: 3px;
 }
 
 .pictureGrid {
+  border: 1px solid black;
   background-image: none;
-  width: 244px;
-  padding: 3px;
+  width: 242px;
   transition: 0.3s;
 }
 
 .pictureGrid:hover {
+  border: 1px solid black;
   background-image: none;
-  width: 244px;
-  padding: 3px;
+  width: 242px;
   opacity: 0.5;
 }
 
 .downloadButton {
   background-image: none;
-  border: 0px;
-  background-color: rgba(55, 255, 72, 0.6);
+  border: solid black 1px;
+  background-color: rgba(0, 255, 0, 0.6);
   padding: 5px;
   font-size: 18px;
   width: 400px;
@@ -296,7 +301,7 @@ iframe {
 
 .downloadButton:hover {
   background-image: none;
-  border: 0px;
+  border: solid black 1px;
   background-color: rgba(0, 255, 0, 0.6);
   padding: 5px;
   padding-left: 50px;
@@ -307,6 +312,8 @@ iframe {
 }
 
 .programEntryBackground {
+  border: solid black 1px;
+  cursor:pointer;
   width: 750px;
   height: auto;
   background-image: none;
@@ -318,6 +325,29 @@ iframe {
 }
 
 .programEntryBackground:hover {
+  border: solid black 1px;
+  width: 750px;
+  background-image: none;
+  background-color: rgba(51, 51, 51, 0.6);
+  margin: auto;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+
+.programNewsBackground {
+  border: solid black 1px;
+  width: 750px;
+  height: auto;
+  background-image: none;
+  background-color: rgba(51, 51, 51, 0.6);
+  margin: auto;
+  overflow-y: auto;
+  padding: 5px;
+  transition: 0.3s
+}
+
+.programNewsBackground:hover {
   width: 750px;
   background-image: none;
   background-color: rgba(51, 51, 51, 0.6);
@@ -327,18 +357,19 @@ iframe {
 }
 
 .menuPicture {
+  border: 1px solid black;
+  cursor:pointer;
   position: relative;
   background-image: none;
-  width: 300;
-  padding: 3px;
+  width: 200px;
   transition: 0.3s
 }
 
 .menuPicture:hover {
+  border: 1px solid black;
   opacity: 0.5;
   background-image: none;
-  width: 300;
-  padding: 3px
+  width: 200px;
 }
 
 
@@ -348,7 +379,7 @@ iframe {
 
 .upButton {
   background-image: none;
-  border: 0px;
+  border: solid black 1px;
   background-color: rgba(51, 51, 51, 0.6);
   padding: 5px;
   font-size: 18px;
@@ -366,7 +397,7 @@ iframe {
 
 .upButton:hover {
   background-image: none;
-  border: 0px;
+  border: solid black 1px;
   background-color: rgba(51, 51, 51, 0.6);
   padding: 5px;
   font-size: 18px;
@@ -422,20 +453,24 @@ iframe {
 }
 
 ::-webkit-scrollbar {
+  border: solid black 1px;
   background-image: none;
   width: 16px;
 }
 
 ::-webkit-scrollbar-track {
+  border: solid black 1px;
   background: #22222288; 
 }
  
 ::-webkit-scrollbar-thumb {
+  border: solid black 1px;
   background: #33333388;
   transition: 0.3; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
+  border: solid black 1px;
   background: #44444488; 
 }
 
@@ -446,8 +481,8 @@ body {
 .blackButton {
   color: #FFFFFF;
   background-image: none;
-  border: 0px;
-  background-color: rgba(0, 0, 0, 0.6);
+  border: solid black 1px;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 5px;
   font-size: 18px;
   width: 400px;
@@ -459,8 +494,8 @@ body {
 .blackButton:hover {
   color: #FFFFFF;
   background-image: none;
-  border: 0px;
-  background-color: rgba(0, 0, 0, 0.6);
+  border: solid black 1px;
+  background-color: rgba(0, 0, 0, 0.5);
   padding-left: 50px;
   font-size: 18px;
   width: 100%;
@@ -494,8 +529,8 @@ body {
 }
 
 .modeButton {
+  border: solid black 1px;
   background-image: none;
-  border: 0px;
   color: white;
   background-color: rgba(51, 51, 51, 0.75);
   padding: 5px;
@@ -507,7 +542,7 @@ body {
 
 .modeButton:hover {
   background-image: none;
-  border: 0px;
+  border: solid black 1px;
   color: black;
   background-color: rgba(255, 255, 255, 0.5);
   padding-left: 5px;
@@ -517,6 +552,7 @@ body {
 }
 
 .settingsBackground {
+  border: solid black 1px;
   width: 760px;
   background-image: none;
   background-color: rgba(51, 51, 51, 0.6);
@@ -533,4 +569,181 @@ body {
 
 button[disabled] {
   pointer-events: all;
+}
+.nopictureandpointer{
+  background-image:none;
+  cursor:pointer;
+}
+
+.newsPicture{
+  border: 1px solid black;
+  position: relative;
+  background-image: none;
+  width: 200;
+  transition: 0.3s
+}
+
+.newsPicture:hover {
+  border: 1px solid black;
+  opacity: 1.0;
+  background-image: none;
+  width: 200;
+}
+
+.pointer{
+  cursor:pointer;
+}
+
+.code {
+  color: white;
+  background-image:none;
+  background-color: #333333;
+  padding: 5px;
+  border-width: 1px;
+  border-color:#DDDDDD;
+  font-family: "Consolas", "Monospace";
+}
+
+
+.code::-moz-selection { /* Firefox */
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.code::selection {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.default{
+  background-color: rgba(51, 51, 51);
+}
+
+.black{
+  background-color:rgba(0, 0, 0);
+}
+
+.blue{
+  background-color:rgb(0, 18, 100);
+}
+
+.orange{
+  background-color: rgba(255, 102, 0);
+  color:black;
+}
+
+.light-blue{
+  background-color: rgb(62, 216, 255);
+  color:black;
+}
+
+.default:hover:enabled{
+  background-color: rgba(51, 51, 51);
+}
+
+.black:hover:enabled{
+  background-color:rgba(0, 0, 0);
+}
+
+.blue:hover:enabled{
+  background-color:rgb(0, 18, 100);
+}
+
+.orange:hover:enabled{
+  background-color: rgba(255, 102, 0);
+  color:black;
+}
+
+.light-blue:hover:enabled{
+  background-color: rgb(62, 216, 255);
+  color:black;
+}
+
+.yellow{
+  background-color: rgb(255, 196, 0);
+  color:black;
+}
+
+.yellow:hover:enabled{
+  background-color:rgb(255, 196, 0);
+  color:black;
+}
+
+.pink{
+  background-color: rgb(201, 0, 117);
+  color:white;
+}
+.pink:hover:enabled{
+  background-color: rgb(201, 0, 117);
+  color:white;
+}
+
+.iframe{
+  border: 1px solid black;
+  background-image: none;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+}
+
+.iframe-cell-left {
+  border: 1px solid black;
+  background-image:none;
+  background-color:rgba(51, 51, 51, 0.6);
+  width: 30%;
+  height: 120px;
+}
+
+.iframe-cell-right {
+  border: 1px solid black;
+  background-image:none;
+  background-color:rgba(51, 51, 51, 0.6);
+  width: 70%;
+  height: 120px;
+}
+#popup {
+  padding: 20px;
+  position: fixed;
+  top: 20%;
+  left: auto;
+  float: center;
+  width: 720px;
+  height: 400px;
+  visibility: hidden;
+  z-index: 10;
+  transition: 0.3s;
+}
+#popup_background {
+  background-image: none;
+  background-color:rgba(51, 51, 51, 0.5);
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  z-index: 9;
+  transition: 0.2s;
+}
+.intoPopup{
+  background-image:none; 
+  background-color:rgba(51, 51, 51, 0.5);
+  padding: 5px;
+}
+#popupButton1{
+  width:233px;
+}
+#popupButton2{
+  width:233px;
+}
+#popupButton3{
+  width:233px;
+}
+
+img{
+  border-radius: 3px;
+  margin:3px;
+}
+
+iframe{
+  border: 1px solid black;
+  border-radius: 3px;
 }
