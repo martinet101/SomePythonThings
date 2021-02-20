@@ -1,41 +1,17 @@
 
 <link rel="stylesheet" type="text/css" href="/DarkStyle.css">
+<link rel="icon" type="image/png" href="/files/favicon.png">
 <link id='style' rel="stylesheet" type="text/css" href="/style.css">
 <script src="/files/sha256.js"></script>
 <script src="/script.js"></script>
-<script>
-  var credentials = {};
-  credentials[sha256('1d21ba8e20fa5906e708bfdb0f2b5b95bf4ce0d066a28c541b4f77a9793ed1cd')] = "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8"
-  credentials[sha256('a441b15fe9a3cf56661190a0b93b9dec7d04127288cc87250967cf3b52894d11')] = "348ba335fd75a1c3391e5f215b426a1f5f9f63e82c69fe6a19131415f997410a" //codelearn - passwordtoGoin
-  var username = accessData('username');
-  if (username == null){
-    window.location.href = '/#loginincorrect';
-  } else {
-    var password = accessData('password');
-    if (username == ''){
-      window.location.href = '/#loginincorrect'
-    } else if (credentials[sha256(sha256(username))] != password){
-      window.location.href = '/#loginincorrect'
-    }
-  }
-</script>
-
-
-
-<link rel="icon" type="image/png" href="/files/favicon.png">
-<title>Administration - SomePythonThings</title>
+<script src="https://smtpjs.com/v3/smtp.js">
 <head class=header>
-  <meta charset="UTF-8">
-  <meta name="description" content="SomePythonThings is a web where you can find some 100% free and useful programs, such as a calculator, a text editor, a rowser, etc. The SomePythonThings Project, © 2018-2020, SomePythonThings">
-  <meta name="keywords" content="SomePyhonThings; SPT, Some Python Things; Calc; Text; Editor; iTunes launcher; browser; paint;">
-  <meta name="author" content="SomePythonThings">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<div class=headerbackground>
 		<h1 class=headertop><a class="menuTitle" href="/">https://www.somepythonthings.tk&nbsp</a></h1>
 		<table border=0 class="menuTable headerboth" width=760>
 			<tr>
 				<td class="menu"><button class=menuButton onclick="window.location.href='/'">Go Home</button></td>
-				<td class="menu"><button class=menuButton onclick="window.location.href='/manual'">The  Manual</button></td>
+				<td class="menu"><button class=menuButton onclick="window.location.href='/manual'">The manual</button></td>
 				<td class="menu"><button class=menuButton onclick="window.location.href='/terms-and-conditions'">License Terms</button></td>
 				<td class="menu"><button class=menuButton onclick="window.location.href='/about'">About us</button></td>
 			</tr>
@@ -43,57 +19,140 @@
 		</div>
 </head>
 <br>
-<div class=background>
-<button class=upButton onClick="window.scroll(0, 0)">Go Up!</button>
-<p id=title class=subtitle></p>
-<script>document.getElementById('title').innerHTML = "Welcome to the administration zone, @"+username;</script></p> 
+<title>Login - SomePythonThings</title>
+<script>
+var username = "";
+var password = "";
+</script>
+  <div class=background>
+  <p class=apartat id='loginincorrect'>SomePythonThings Administrator Login</p><br id='login'>
+  <div id='action' class="background-image: none;background-color: none;"></div>
+  <script>
+  document.getElementById('action').innerHTML = "<div style='background-image:none;padding:1px;width:99.9%;border:none;padding-left:0px' class=background><p style='background-image:none' class=text>&nbsp;</p></div>";
+  if ((window.location.href).includes('incorrect')) {
+    document.getElementById('action').innerHTML = "<div style='background-image:none;background-color:rgba(255, 200, 200, 1); border: 2px solid; border-color: red; color:red;padding: 2px; padding-left:20px;'><p style='background-image:none; color:red;font-weight:bold;'>Invalid credentials!</p></div>";
+  } 
+  if ((window.location.href).includes('logout')) {
+    document.getElementById('action').innerHTML = "<div id='logout' style='background-image:none;background-color:rgba(200, 200, 255, 1); border: 2px solid; border-color: blue; color:blue;padding: 2px; padding-left:20px'><p style='background-image:none; color:blue;font-weight:bold;'>Logged out successfully</p></div>";
+    window.location.href="#"
+  }</script>
+  <div id='br1' style='visibility:hidden;background-image:none;'><br><br id = 'br2' style='visibility:hidden;'></div>
+  <input class=textbox id=loginusername type=text placeholder="Username"><br><br>
+  <input class=textbox id=loginpassword type=password placeholder="Password"><br><br>
+  <button class=button onClick="login()">Administrator Login</button>
+  </div>
 
-<button onclick="logout()" class="button">Log out</button>
-<p class=subtitle>SomePythonThings Calc</p>
-<table class=nopicture><tr class=nopicture><td class="nopicture iframe-cell-left">Actual version (Desktop):<iframe class=iframe src="https://www.somepythonthings.tk/versions/calc.ver"></iframe>
-  </td><td class="nopicture iframe-cell-right"><br><br>
-    <button class="button blue" onclick="newpage('https://repl.it/@martiCliment/SomePythonThings#versions/calc.ver')">Edit version</button><br><br>
-    <button class="downloadButton" onclick="newpage('https://www.somepythonthings.tk/programs/somepythonthings-calc')">View program page</button><br><br>
-    </td></tr></table>
-<table class=nopicture><tr class=nopicture><td class="nopicture iframe-cell-left">Actual version (Android):<iframe class=iframe src="https://www.somepythonthings.tk/versions/calc-android.ver"></iframe>
-  </td><td class="nopicture iframe-cell-right"><br><br>
-    <button class="button blue" onclick="newpage('https://repl.it/@martiCliment/SomePythonThings#versions/calc-android.ver')">Edit version</button><br><br>
-    <button class="button pink" onclick="newpage('http://ai2.appinventor.mit.edu')">View on Appinventor</button><br><br>
-    </td></tr></table>
-<p class=subtitle>SomePythonThings Zip Manager</p>
-<table class=nopicture><tr class=nopicture><td class="nopicture iframe-cell-left">Actual version:<iframe class=iframe src="https://www.somepythonthings.tk/versions/zip.ver"></iframe>
-  </td><td class="nopicture iframe-cell-right"><br><br>
-    <button class="button blue" onclick="newpage('https://repl.it/@martiCliment/SomePythonThings#versions/zip.ver')">Edit version</button><br><br>
-    <button class="downloadButton" onclick="newpage('https://www.somepythonthings.tk/programs/somepythonthings-zip-manager')">View program page</button><br><br>
-    </td></tr></table>
-    <p class=subtitle>SomePythonThings Browser for Android</p>
-<table class=nopicture><tr class=nopicture><td class="nopicture iframe-cell-left">Actual version:<iframe class=iframe src="https://www.somepythonthings.tk/versions/browser-android.ver"></iframe>
-  </td><td class="nopicture iframe-cell-right"><br><br>
-    <button class="button blue" onclick="newpage('https://repl.it/@martiCliment/SomePythonThings#versions/android/browser.html')">Edit version</button><br><br>
-    <button class="downloadButton" onclick="newpage('https://www.somepythonthings.tk/programs/somepythonthings-browser')">View program page</button><br><br>
-    </td></tr></table>
-<p class=subtitle>SomePythonThings Text Editor</p>
-<table class=nopicture><tr class=nopicture><td class="nopicture iframe-cell-left">Actual version:<iframe class=iframe src="https://www.somepythonthings.tk/versions/text.html"></iframe>
-  </td><td class="nopicture iframe-cell-right"><br><br>
-    <button class="button blue" onclick="newpage('https://repl.it/@martiCliment/SomePythonThings#versions/text.html')">Edit version</button><br><br>
-    <button class="downloadButton" onclick="newpage('https://www.somepythonthings.tk/programs/somepythonthings-text-editor')">View program page</button><br><br>
-    </td></tr></table>
+<script>
+  function login(){
+    if ((window.location.href).includes('https')){
+      document.getElementById('br1').style.visibility='visible';
+      document.getElementById('br2').style.visibility='visible';
+      username = document.getElementById('loginusername').value;
+      password = sha256(document.getElementById('loginpassword').value);
+      printpage();
+    } else {
+      alert('You need to establish a secure (https) connection to be able to login')
+    }
+  }
+  async function printpage(){
+    window.location.href="#"
+    document.getElementById('action').innerHTML = "<div id='logging' style='visibility:hidden; height:0px;background-image:none;background-color:rgba(200, 255, 200, 1); border: 2px solid; border-color: green; color:green;padding: 2px; padding-left:20px'><p style='background-image:none; color:green;font-weight:bold;'>Logging in...</p></div>";
+    var credentials = {};
+    credentials[sha256('1d21ba8e20fa5906e708bfdb0f2b5b95bf4ce0d066a28c541b4f77a9793ed1cd')] = "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8"
+    credentials[sha256('a441b15fe9a3cf56661190a0b93b9dec7d04127288cc87250967cf3b52894d11')] = "348ba335fd75a1c3391e5f215b426a1f5f9f63e82c69fe6a19131415f997410a" //codelearn - passwordtoGoin
+    document.getElementById('action').innerHTML = "<div id='logging' style='background-image:none;background-color:rgba(200, 255, 200, 1); border: 2px solid; border-color: green; color:green;padding: 2px; padding-left:20px'><p style='background-image:none; color:green;font-weight:bold;'>Logging in...</p></div>";
+    setTimeout(() => { 
+      if (username == null){
+      window.location.href = '/admin/#loginincorrect';
+      document.getElementById('action').innerHTML = "<div style='background-image:none;background-color:rgba(255, 200, 200, 1); border: 2px solid; border-color: red; color:red;padding: 2px; padding-left:20px'><p style='background-image:none; color:red;font-weight:bold;'>Invalid credentials!</p></div>";
+      } else {
+        if (username == ''){
+          window.location.href = '/admin/#loginincorrect'
+      document.getElementById('action').innerHTML = "<div style='background-image:none;background-color:rgba(255, 200, 200, 1); border: 2px solid; border-color: red; color:red;padding: 2px; padding-left:20px'><p style='background-image:none; color:red;font-weight:bold;'>Invalid credentials!</p></div>";
+        } else if (credentials[sha256(sha256(username))] != password){
+          window.location.href = '/admin/#loginincorrect'
+      document.getElementById('action').innerHTML = "<div style='background-image:none;background-color:rgba(255, 200, 200, 1); border: 2px solid; border-color: red; color:red;padding: 2px; padding-left:20px'><p style='background-image:none; color:red;font-weight:bold;'>Invalid credentials!</p></div>";
+        } else {
+          document.write(`
+          <link rel="stylesheet" type="text/css" href="/DarkStyle.css">
+          <link id='style' rel="stylesheet" type="text/css" href="/style.css">
+          <link rel="icon" type="image/png" href="/files/favicon.png">
+          <title>Administration - SomePythonThings</title>
+          <script src="/script.js"><\/script> 
+          <head class=header>
+            <meta charset="UTF-8">
+            <meta name="description" content="SomePythonThings is a web where you can find some 100% free and useful programs, such as a calculator, a text editor, a rowser, etc. The SomePythonThings Project, © 2018-2020, SomePythonThings">
+            <meta name="keywords" content="SomePyhonThings; SPT, Some Python Things; Calc; Text; Editor; iTunes launcher; browser; paint;">
+            <meta name="author" content="SomePythonThings">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <div class=headerbackground>
+              <h1 class=headertop><a class="menuTitle" href="/">https://www.somepythonthings.tk&nbsp</a></h1>
+              <table border=0 class="menuTable headerboth" width=760>
+                <tr>
+                  <td class="menu"><button class=menuButton onclick="window.location.href='/'">Go Home</button></td>
+                  <td class="menu"><button class=menuButton onclick="window.location.href='/manual'">The  Manual</button></td>
+                  <td class="menu"><button class=menuButton onclick="window.location.href='/terms-and-conditions'">License Terms</button></td>
+                  <td class="menu"><button class=menuButton onclick="window.location.href='/about'">About us</button></td>
+                </tr>
+              </table>
+              </div>
+          </head>
+          <br>
+          <div class=background>
+          <button class=upButton onClick="window.scroll(0, 0)">Go Up!</button>
+          <p id=title class=subtitle>Welcome to the Administration Area, `+username+`</p>
+          <button onclick="window.location.href='/admin/#logout';location.reload()" class="button">Log out</button>
+          <p class=subtitle>SomePythonThings Calc</p>
+          <table class=nopicture><tr class=nopicture><td class="nopicture iframe-cell-left">Actual version (Desktop):<iframe class=iframe src="https://www.somepythonthings.tk/versions/calc.ver"></iframe>
+            </td><td class="nopicture iframe-cell-right"><br><br>
+              <button class="button blue" onclick="newpage('https://repl.it/@martiCliment/SomePythonThings#versions/calc.ver')">Edit version</button><br><br>
+              <button class="downloadButton" onclick="newpage('https://www.somepythonthings.tk/programs/somepythonthings-calc')">View program page</button><br><br>
+              </td></tr></table>
+          <table class=nopicture><tr class=nopicture><td class="nopicture iframe-cell-left">Actual version (Android):<iframe class=iframe src="https://www.somepythonthings.tk/versions/calc-android.ver"></iframe>
+            </td><td class="nopicture iframe-cell-right"><br><br>
+              <button class="button blue" onclick="newpage('https://repl.it/@martiCliment/SomePythonThings#versions/calc-android.ver')">Edit version</button><br><br>
+              <button class="button pink" onclick="newpage('http://ai2.appinventor.mit.edu')">View on Appinventor</button><br><br>
+              </td></tr></table>
+          <p class=subtitle>SomePythonThings Zip Manager</p>
+          <table class=nopicture><tr class=nopicture><td class="nopicture iframe-cell-left">Actual version:<iframe class=iframe src="https://www.somepythonthings.tk/versions/zip.ver"></iframe>
+            </td><td class="nopicture iframe-cell-right"><br><br>
+              <button class="button blue" onclick="newpage('https://repl.it/@martiCliment/SomePythonThings#versions/zip.ver')">Edit version</button><br><br>
+              <button class="downloadButton" onclick="newpage('https://www.somepythonthings.tk/programs/somepythonthings-zip-manager')">View program page</button><br><br>
+              </td></tr></table>
+              <p class=subtitle>SomePythonThings Browser for Android</p>
+          <table class=nopicture><tr class=nopicture><td class="nopicture iframe-cell-left">Actual version:<iframe class=iframe src="https://www.somepythonthings.tk/versions/browser-android.ver"></iframe>
+            </td><td class="nopicture iframe-cell-right"><br><br>
+              <button class="button blue" onclick="newpage('https://repl.it/@martiCliment/SomePythonThings#versions/android/browser.html')">Edit version</button><br><br>
+              <button class="downloadButton" onclick="newpage('https://www.somepythonthings.tk/programs/somepythonthings-browser')">View program page</button><br><br>
+              </td></tr></table>
+          <p class=subtitle>SomePythonThings Text Editor</p>
+          <table class=nopicture><tr class=nopicture><td class="nopicture iframe-cell-left">Actual version:<iframe class=iframe src="https://www.somepythonthings.tk/versions/text.html"></iframe>
+            </td><td class="nopicture iframe-cell-right"><br><br>
+              <button class="button blue" onclick="newpage('https://repl.it/@martiCliment/SomePythonThings#versions/text.html')">Edit version</button><br><br>
+              <button class="downloadButton" onclick="newpage('https://www.somepythonthings.tk/programs/somepythonthings-text-editor')">View program page</button><br><br>
+              </td></tr></table>
 
-<br><br>
-<p class=subtitle>General Manteinance:</p><br>
-<button class="button yellow" onclick='newpage("https://keep.google.com/u/0/#LIST/1er227vwKEdh_eDyBFiTaMJttbqgpmgqleSShw98U0XrTRtza-j-74Fcngb4cgg")'>Things to do... (Google Keep)</button>
-<br><br>
-<p class=subtitle>SomePythonThings Main Webpage</p>
-<button onclick="newpage('https://www.somepythonthings.tk')" class="button default">View Online</button><br><br>
-<button onclick="newpage('https://repl.it/@martiCliment/SomePythonThings')" class="button blue">Edit on Repl.it</button><br><br>
-<button onclick="newpage('https://github.com/martinet101/SomePythonThings')" class="button black">View Source Code on Github</button><br><br>
-<button onclick="newpage('https://my.freenom.com/clientarea.php?action=domaindetails&id=1082331974')" class="button light-blue">Manage domain on Freenom</button><br><br>
-<br><br>
-<p class=subtitle>SomePythonThings Media Webpage</p>
-<button onclick="newpage('https://media.somepythonthings.tk')" class="button default">View Online</button><br><br>
-<button onclick="newpage('https://repl.it/@somepythonthing/SomePythonThings-Media')" class="button blue">Edit on Repl.it</button><br><br>
-<button onclick="newpage('https://github.com/martinet101/SomePythonThings-Media')" class="button black">View Source Code on Github</button><br><br>
-<button onclick="newpage('https://my.freenom.com/clientarea.php?action=domaindetails&id=1082331974')" class="button light-blue">Manage domain on Freenom</button><br><br>
-<br><br>
-
-</div>
+          <br><br>
+          <p class=subtitle>General Manteinance:</p><br>
+          <button class="button yellow" onclick='newpage("https://keep.google.com/u/0/#LIST/1er227vwKEdh_eDyBFiTaMJttbqgpmgqleSShw98U0XrTRtza-j-74Fcngb4cgg")'>Things to do... (Google Keep)</button>
+          <br><br>
+          <p class=subtitle>SomePythonThings Main Webpage</p>
+          <button onclick="newpage('https://www.somepythonthings.tk')" class="button default">View Online</button><br><br>
+          <button onclick="newpage('https://repl.it/@martiCliment/SomePythonThings')" class="button blue">Edit on Repl.it</button><br><br>
+          <button onclick="newpage('https://github.com/martinet101/SomePythonThings')" class="button black">View Source Code on Github</button><br><br>
+          <button onclick="newpage('https://my.freenom.com/clientarea.php?action=domaindetails&id=1082331974')" class="button light-blue">Manage domain on Freenom</button><br><br>
+          <br><br>
+          <p class=subtitle>SomePythonThings Media Webpage</p>
+          <button onclick="newpage('https://media.somepythonthings.tk')" class="button default">View Online</button><br><br>
+          <button onclick="newpage('https://repl.it/@somepythonthing/SomePythonThings-Media')" class="button blue">Edit on Repl.it</button><br><br>
+          <button onclick="newpage('https://github.com/martinet101/SomePythonThings-Media')" class="button black">View Source Code on Github</button><br><br>
+          <button onclick="newpage('https://my.freenom.com/clientarea.php?action=domaindetails&id=1082331974')" class="button light-blue">Manage domain on Freenom</button><br><br>
+          <br><br>
+          </div>
+          `);
+        }
+      }
+    }, 200);
+  }
+</script>
+</html>

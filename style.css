@@ -343,6 +343,7 @@ iframe {
 
 .upButton {
   border: solid #DDDDDD 1px;
+  border-right: none;
   background-image: none;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 5px;
@@ -361,6 +362,7 @@ iframe {
 
 .upButton:hover {
   border: solid #DDDDDD 1px;
+  border-right: none;
   background-image: none;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 5px;
@@ -588,7 +590,7 @@ body {
   padding: 5px;
   border-width: 1px;
   border-color:#DDDDDD;
-  font-family: "Consolas", "Monospace";
+  font-family: "Consolas", monospace;
 }
 
 
@@ -657,14 +659,12 @@ body {
 .iframe-cell-left {
   background-image:none;
   background-color:rgba(255, 255, 255, 0.5);
-  border: 1px solid white;
   width: 30%;
   height: 120px;
 }
 
 .iframe-cell-right {
   background-image:none;
-  border: 1px solid white;
   background-color:rgba(255, 255, 255, 0.5);
   width: 70%;
   height: 120px;
@@ -733,4 +733,17 @@ img{
 iframe{
   border: 1px solid white;
   border-radius: 3px;
+}
+
+
+.calcbutton{
+  background-image: inherit;
+  color: white;
+  background-color: #333333;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-family: "Roboto Mono", monospace;
 }

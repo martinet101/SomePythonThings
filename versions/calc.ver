@@ -1,11 +1,16 @@
-3.4/// - Fixed a bug that changed pi and e values on some windows users.
- - Now you can add operations on x and y letters.
- - If you do a syntax error, the program will allow you to "repair" it.
+3.7/// - Swithced UI from PyQt5 to PySide2
+ - Some buttons are now rounded. (Better UI)
+ - Improved dialogs
+ - Added compatibility for a new 100% automatic update system on windows. (Installers are made with Inno Setup)
+ - Fixed "Save History" on windows when using symbols such as x, y...
+ - If you write 2x, the calculator will automatically write 2*x, instead of not writing the x
+ - Other bug fixes and improvements
+ - Finally, i switched from python 3.7 to python 3.8 on macOS
 ///
-https://github.com/martinet101/SomePythonThings-Calc/releases/download/3.4/somepythonthings-calc_3.4_amd64.deb
+https://github.com/martinet101/SomePythonThings-Calc/releases/download/3.7/somepythonthings-calc_3.7_amd64.deb
 ///
-https://github.com/martinet101/SomePythonThings-Calc/releases/download/3.4/SomePythonThings.Calc.Win32.exe
+https://github.com/martinet101/SomePythonThings-Calc/releases/download/3.7/SomePythonThings.Calc.Win32.exe
 ///
-https://github.com/martinet101/SomePythonThings-Calc/releases/download/3.4/SomePythonThings.Calc.Win64.exe
+https://github.com/martinet101/SomePythonThings-Calc/releases/download/3.7/SomePythonThings.Calc.Win64.exe
 ///
-https://github.com/martinet101/SomePythonThings-Calc/releases/download/3.4/SomePythonThings.Calc.macOS.dmg
+http://www.somepythonthings.tk/macOS/SomePythonThings%20Calc%20macOS.dmg

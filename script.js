@@ -19,7 +19,7 @@ function newpage(s){
 function logout(){
   setCookies('username', '');
   setCookies('password', '');
-  window.location.href='/#logout'
+  window.location.href='/admin/#logout'
 }
 
 function checkLicense(){
@@ -31,7 +31,7 @@ function checkLicense(){
 
 
 
-function login(){
+/*function login(){
   if ((window.location.href).includes('https')){
     document.getElementById('logging').style.visibility='visible';
     document.getElementById('logging').style.height='auto';
@@ -45,13 +45,13 @@ function login(){
   } else {
     alert('You need to establish a secure (https) connection to be able to login')
   }
-}
+}*/
 
 function checkHTTPS(){
   var url = window.location.href;
   if (!(url.includes('https'))) {
     if(!(url.includes("NOHTTPS"))){
-    window.location.replace(url.replace("http://", "https://"));
+    //window.location.replace(url.replace("http://", "https://"));
     }
   }
 }
@@ -74,6 +74,7 @@ function accessData(key){
     }
   }
   console.warn('Key "'+key+'" was not found on cookies database!');
+  setCookies(key, "none")
   return 0;
 }
 
@@ -240,3 +241,5 @@ function checkAgree(){// NOMÉS /about/
 }
 
 //només /about/
+
+function download(s){}

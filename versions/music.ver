@@ -1,0 +1,15 @@
+2.2/// - Seeking fix on windows, where an incorrect seeking could happen
+ - Download music on macOS fixed, where song was not saved
+ - Added the ability to filter music on your library
+ - Fix app restart on certain times when quitting
+ - Other improvements and bug fixes
+ - Added compatility with macOS Big Sur
+ - Other macOS improvements
+///
+https://github.com/martinet101/SomePythonThings-Music/releases/download/2.2/somepythonthings-music_2.2_amd64.deb
+///
+https://github.com/martinet101/SomePythonThings-Music/releases/download/2.2/SomePythonThings.Music.Win32.exe
+///
+https://github.com/martinet101/SomePythonThings-Music/releases/download/2.2/SomePythonThings.Music.Win64.exe
+///
+https://github.com/martinet101/SomePythonThings-Music/releases/download/2.2/SomePythonThings.Music.macOS.dmg

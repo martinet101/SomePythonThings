@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<script src="https://smtpjs.com/v3/smtp.js">
+
+</script>
+<script src='https://www.google.com/recaptcha/api.js' async defer></script>
+
+<link rel="icon" type="image/png" href="/files/favicon.png">
+<link rel="stylesheet" type="text/css" href="/DarkStyle.css">
+<link id='style' rel="stylesheet" type="text/css" href="/style.css">
+
+<script src="/script.js">
+</script>
+<title>SomePythonThings - Error Report</title>
+<script>
+	checkHTTPS()
+</script>
+<head class=header>
+	<div class=headerbackground>
+		<h1 class=headertop><a class="menuTitle" href="/">https://www.somepythonthings.tk&nbsp</a></h1>
+		<table border=0 class="menuTable headerboth" width=760>
+			<tr>
+				<td class="menu"><button class=menuButton onclick="window.location.href='/'">Go Home</button></td>
+				<td class="menu"><button class=menuButton onclick="window.location.href='/manual'">The manual</button></td>
+				<td class="menu"><button class=menuButton onclick="window.location.href='/terms-and-conditions'">License Terms</button></td>
+				<td class="menu"><button class=menuButton onclick="window.location.href='/about'">About us</button></td>
+			</tr>
+		</table>
+		</div>
+</head>
+
+<button class=upButton onClick="window.scroll(0, 0)">Go Up!</button>
+<body onload=loadError()>
+  <div class=background>
+    <br>
+    <p class=title>SomePythonThings Error Report</p>
+    <p class=text id="subtitle">{AppName} seems to have crashed. Click the button below to send the error report.</p>
+    <br>
+    <p class=text>Note that this information is not going to be used with another prupose other than trying to fix the error cause(s). The following text is going to be sent by e-mail to SomePythonThings.
+    <br>
+    <p class=text>What will be sent when clicking Send:</p>
+    <textarea class="code textarea" id="errorBody" style="height: 500px; width: 750px;border:none;overflow:auto;font-size:14px;" disabled>Loading...</textarea>
+    <button class=button onClick="sendError()" id='button'>Send error report</button><br>
+    <p class=text>For more info, please <a href="/about/#contact"class=link>Contact US</a></p>
+  </div>
+<body>
+
+<script>
+  function loadError(){
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    app = urlParams.get("appName")
+    errorBody = urlParams.get("errorBody")
+    document.getElementById("subtitle").innerHTML = document.getElementById("subtitle").innerHTML.replace("{AppName}", app);
+    document.getElementById("errorBody").innerHTML = errorBody.replace(/{newline}/g, "\n").replace(/{space}/g, "&nbsp;");
+  }
+
+  function sendError(){
+    document.getElementById("button").innerHTML = 'Sending...';
+    document.getElementById("button").disabled = true;
+    Email.send({
+        SecureToken : "70d2f234-fa89-4e5a-891a-2051994cb8dd",
+        To : 'somepythonthingschannel@gmail.com',
+        From : "somepythonthingschannel@gmail.com",
+        Subject : "Error Report - SomePythonThings",
+        Body : "Error Report Recieved: <br><br>"+document.getElementById('errorBody').innerHTML.replace(/\n/g, '<br>')
+    }).then(
+      message => alert("Thanks for the feedback :)"));
+      document.getElementById("button").innerHTML = 'Error report sent!';
+      document.getElementById("button").style.backgroundcolor = 'rgb(0, 255, 0)';
+      location.href="/"
+  }
+  </script>
