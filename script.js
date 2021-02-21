@@ -51,7 +51,7 @@ function checkHTTPS(){
   var url = window.location.href;
   if (!(url.includes('https'))) {
     if(!(url.includes("NOHTTPS"))){
-    //window.location.replace(url.replace("http://", "https://"));
+    window.location.replace(url.replace("http://", "https://"));
     }
   }
 }
@@ -114,7 +114,7 @@ function returnMode() {
   } else if (webmode == 'light'){
     return 'Light'
   } else {
-    document.cookie = 'preferredMode%=%auto';
+    document.cookie = 'preferredMode=auto';
   }
 }
 

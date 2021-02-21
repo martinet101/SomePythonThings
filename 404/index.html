@@ -1,34 +1,61 @@
 <!DOCTYPE html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+    * {
+        color: #dddddd;
+        background-color: #0022dd;
+        font-family: 'VT323', monospace;
+        font-size: 1.07em;
+        user-select: none;
+    }
+    #bsod{
+        margin: auto;
+        width: 600px;
+        top: 200px;
+    }
+    .inverse {
+        background-color: #dddddd;
+        color: #0022dd;
+        font-size: inherit;
+    }
+    #banner{
+        text-align: center;
+        margin:auto;
+        font-size: 1.07em;
+        width: 340px;
+    }
+    button{
+        border: none;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .button {
+        border: none;
+        text-decoration: underline;
+        cursor: pointer;
+        width: 600px;
+        outline: none;
+    }
+</style>
 <html>
-</script>
-<link rel="icon" type="image/png" href="/files/favicon.png">
-<link rel="stylesheet" type="text/css" href="/DarkStyle.css">
-<link id='style' rel="stylesheet" type="text/css" href="/style.css">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <title>404 NOT FOUND</title>
+    <div id=bsod><p class=inverse id=banner>404 PAGE NOT FOUND - SOMEPYTHONTHINGS</p>
+        <br/>
+        <br/>
+        <p class=body id=url>The page "$PAGE" was not found on our servers<br/><br>
+        If you don't know how did you arrive here, just<button onClick="window.history.back();">go back</button><br/><br/>    
+        <br/>Please check the Url and try it again later. If the error persists, please <a href="/about">contact us</a>
+        <br/><br/>
+        Error Code: ERROR_404_NOT_FOUND (0x06F489F)<br/><br/>
+        </p>
+        <button class=button onClick="window.location.reload()">Try Again</button>
+    </div>
+</html>
+<script>document.getElementById("url").innerHTML = document.getElementById("url").innerHTML.replace("$PAGE", window.location.href);
 
-<script src="/script.js">
 </script>
-<title>SomePythonThings Calc Help</title>
-<script>
-	checkHTTPS()
-</script>
-<head class=header>
-	<div class=headerbackground>
-		<h1 class=headertop><a class="menuTitle" href="/">https://www.somepythonthings.tk&nbsp</a></h1>
-		<table border=0 class="menuTable headerboth" width=760>
-			<tr>
-				<td class="menu"><button class=menuButton onclick="window.location.href='/'">Go Home</button></td>
-				<td class="menu"><button class=menuButton onclick="window.location.href='/manual'">The manual</button></td>
-				<td class="menu"><button class=menuButton onclick="window.location.href='/terms-and-conditions'">License Terms</button></td>
-				<td class="menu"><button class=menuButton onclick="window.location.href='/about'">About us</button></td>
-			</tr>
-		</table>
-		</div>
-</head>
-<button class=upButton onClick="window.scroll(0, 0)">Go Up!</button>
-<br>
-<br>
-<div class=background>
-
-	<p class=title>Error 404 - Page not found!</p>
-	<p class=text>The page you were searchg does not exist. Please check if the URL is misspelled or try again later. If the error persists or you think this should not be happening, please <a class=link href="/about">Contact Us</a> </p>
-</div>
