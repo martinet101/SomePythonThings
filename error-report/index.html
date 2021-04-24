@@ -52,7 +52,7 @@
     app = urlParams.get("appName")
     errorBody = urlParams.get("errorBody")
     document.getElementById("subtitle").innerHTML = document.getElementById("subtitle").innerHTML.replace("{AppName}", app);
-    document.getElementById("errorBody").innerHTML = errorBody.replace(/{newline}/g, "\n").replace(/{space}/g, "&nbsp;");
+    document.getElementById("errorBody").innerHTML = errorBody.replace(/{newline}/g, "\n").replace(/{l}/g, "\n").replace(/{space}/g, "&nbsp;").replace(/{s}/g, "&nbsp;");
   }
 
   function sendError(){
